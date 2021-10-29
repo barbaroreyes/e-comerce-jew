@@ -11,27 +11,42 @@ const Wrapper = styled.div`
 padding:20px`
 
 const Title = styled.h1`
+
 font-weight:300;
 text-align:center;
 `;
-const Top = styled.div``
-const TopTex = styled.span`
+const Top = styled.div`
 display:flex;
-justify-content: space-around;
-// flex-direction: column;
-align-items: center;
+justify-content:center;
+align-items:center;
+width:100%;
+`
+const TopTexts = styled.div`
+display:flex;
+
+`
+const TopTex = styled.span`
+
+width:100px;
+margin:70px;
+padding:10px;
+cursor:pointer;
+&:hover{
+    text-decoration:underline;
+}
 `
 const TopButton = styled.div`
 padding:14px;
 background:transparent;
 color: rgb(189,132,64);
 border-radius:30px 30px;
-width:200px;
+width:30%;
 cursor:pointer;
 margin:20px;
 font-weight:500
 font-size:18px;
 border:5px solid rgb(189,132,64);
+text-align:center;
 &:hover{
   background:black;
   color:#fff
@@ -49,9 +64,12 @@ const Cart = () => {
          <Title>Tus Products</Title>
          <Top>
              <TopButton>Continue Shopping</TopButton>
+             <TopTexts>
              <TopTex>Your Bag</TopTex>
              <TopTex>Your wishlist</TopTex>
-             <TopButton>Checkout Now</TopButton>
+             </TopTexts>
+             
+             <TopButton type="filled">Checkout Now</TopButton>
          </Top>
          <Bottom></Bottom>
          
