@@ -10,8 +10,8 @@ import Footer from '../Compo/Footer';
 const Home = () => {
   return (
     <div>
-     <Anouncement/> 
      < NavBar/>
+     <Anouncement/> 
      <Slider/>
      <Categories/>
      <Products/>

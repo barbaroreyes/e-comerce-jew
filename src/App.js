@@ -6,6 +6,7 @@ import Products from './pages/ProductsList';
 import Product from './pages/Product';
 import Register from './pages/Register';
 import Login from './pages/Login';
+import Cart from './pages/Cart';
 function App() {
   return (
     <div className="App">
@@ -24,6 +25,9 @@ function App() {
         </Route>
         <Route exact path='/login'>
            <Login/>
+        </Route>
+        <Route exact path='/cart'>
+           <Cart/>
         </Route>
       </Switch>
     </div>
