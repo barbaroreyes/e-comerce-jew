@@ -71,7 +71,7 @@ const NavBar = () => {
          </Left>
          <Center><Logo>La Mamgo Jewelry</Logo></Center>
          <Rigth>
-             <MenuItem><Link to='/register'>Sign In</Link></MenuItem>
+             <MenuItem><Link to='/register'>Sign In or Login</Link></MenuItem>
              {/* <MenuItem>Sign in</MenuItem> */}
              <MenuItem>
              <Badge badgeContent={1} color="primary">
