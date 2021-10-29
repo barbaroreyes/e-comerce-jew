@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 import styled from 'styled-components';
 import {Search, ShoppingCartOutlined} from '@material-ui/icons'
 import {Badge} from '@material-ui/core'
@@ -70,8 +71,8 @@ const NavBar = () => {
          </Left>
          <Center><Logo>La Mamgo Jewelry</Logo></Center>
          <Rigth>
-             <MenuItem>Register</MenuItem>
-             <MenuItem>Sign in</MenuItem>
+             <MenuItem><Link to='/register'>Sign In</Link></MenuItem>
+             {/* <MenuItem>Sign in</MenuItem> */}
              <MenuItem>
              <Badge badgeContent={1} color="primary">
                  <ShoppingCartOutlined/>

@@ -4,6 +4,8 @@ import {Switch, Route} from 'react-router-dom'
 import Home from './pages/Home';
 import Products from './pages/ProductsList';
 import Product from './pages/Product';
+import Register from './pages/Register';
+import Login from './pages/Login';
 function App() {
   return (
     <div className="App">
@@ -14,8 +16,14 @@ function App() {
         <Route exact path='/productslist'>
            <Products/>
         </Route>
-        <Route exact path='/product'>
+        <Route exact path='/product:id'>
            <Product/>
+        </Route>
+        <Route exact path='/register'>
+           <Register/>
+        </Route>
+        <Route exact path='/login'>
+           <Login/>
         </Route>
       </Switch>
     </div>
