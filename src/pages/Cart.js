@@ -53,7 +53,56 @@ text-align:center;
 }
 `
 
-const Bottom = styled.div``
+const Bottom = styled.div`
+border:1px solid black ;
+display:flex;
+justify-content:space-between;
+
+`
+const Info= styled.div`
+flex:3;
+display:flex;
+justify-content:space-between;
+border:2px solid black;
+`
+const Sumary = styled.div`
+flex:1;`
+
+const Product= styled.div`
+display:flex;
+`
+const ProdutDetails = styled.div`
+display:flex;
+justify-content:space-between;
+padding:10px;
+border:1px solid 
+`
+const Details= styled.div`
+display:flex;
+justify-content:space-around;
+flex-direction:column;
+align-items:center;
+padding:20px;
+
+`
+const Image= styled.img`
+width:300px;
+`
+const ProdutName = styled.div`
+border:1px solid ;
+width:100px;
+padding:10px;
+`
+const ProductId = styled.div`
+border:1px solid ;
+width:100px;
+padding:10px;
+`
+const Price = styled.div`
+border:1px solid ;
+width:100px;
+padding:10px;
+`
 
 const Cart = () => {
   return (
@@ -71,7 +120,22 @@ const Cart = () => {
              
              <TopButton type="filled">Checkout Now</TopButton>
          </Top>
-         <Bottom></Bottom>
+         <Bottom>
+              <Info>
+                  <Product>
+                      <ProdutDetails>
+                      <Image src='https://ecomercec9b5366954ad45c183a02ba23f9f2d3c122320-dev.s3.amazonaws.com/public/joyeria+fotos/Argollas1.jpeg'/>
+                          <Details>
+                              <ProdutName>Agollas</ProdutName> 
+                              <ProductId>ProductId</ProductId>
+                           <Price>Price</Price>
+                             </Details>
+
+                      </ProdutDetails>
+                  </Product>
+              </Info>
+              <Sumary>sumary</Sumary>
+         </Bottom>
          
      </Wrapper>
      <Footer/>
