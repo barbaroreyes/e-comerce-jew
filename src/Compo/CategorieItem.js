@@ -1,7 +1,7 @@
 
 import React from 'react';
 import styled from 'styled-components';
-
+import {mobile,table,all} from './Responsive';
 
 const Container = styled.div`
 display:flex;
@@ -10,7 +10,10 @@ flex:1;
 margin: 4px;
 heigth:100vh;
 position:relative;
-
+${mobile(
+  {width: '100%',justifyContent:'center',margin:"2px"}
+)}
+}
 
 `
 const Image = styled.img`
