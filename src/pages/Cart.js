@@ -100,6 +100,7 @@ box-shadow:4px 4px;
 // border: 2px solid white ;
 width:100%;
 color:#ffff;
+font-weight:700;
 
 `
 const ProductId = styled.span`
@@ -108,6 +109,7 @@ width:100px;
 padding:10px;
 width:100%;
 color:#ffff;
+font-weight:700;
 `
 const Price = styled.div`
 display:flex;
@@ -120,10 +122,13 @@ padding:10px;
 font-size:20px;
 padding:9px;
 margin:10px;
-border:3px solid 
+border:3px solid ;
+font-weight:700;
+
 `
 const ProductAmountContainer = styled.div`
 margin:10px;
+font-weight:700;
 &:hover{
     background-color: #fff;
     color:rgb(63,56,50);
@@ -140,7 +145,7 @@ margin:15px;
 
  `
  const AddContainer = styled.div`
- 
+ font-weight:700;
  font-size:40px;
  `
 
