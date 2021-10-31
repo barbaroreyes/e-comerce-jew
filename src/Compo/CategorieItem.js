@@ -18,9 +18,10 @@ width:100%;
 heigth:100%;
 object-fit:cover;
 ${mobile(
-  {heigth:'20vh',margin:"2px"}
+  {heigth:'30vh',margin:"2px"}
 )}
 }
+
 `
 const Info = styled.div`
 position:absolute;

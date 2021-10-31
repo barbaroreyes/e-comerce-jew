@@ -14,6 +14,9 @@ justify-content:center;
 ${mobile(
   {padding: '0px',flexDirection: 'column',border: '1px solid'}
 )}
+${table(
+  {flexDirection: 'column'}
+)}
 }
 `
 
