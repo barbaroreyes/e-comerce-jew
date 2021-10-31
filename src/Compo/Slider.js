@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import {ArrowLeftOutlined,ArrowRightOutlined} from '@material-ui/icons';
 import { useState } from 'react';
 import Data from '../Compo/Data'
+import {mobile,table,all} from './Responsive';
 
 const Container = styled.div`
 width: 100%; 
@@ -12,7 +13,10 @@ display:flex;
 position:relative;
 overflow:hidden;
 
-
+${mobile(
+  {display: 'none'}
+)}
+}
 `;
 
 const Arrow = styled.div`

@@ -44,12 +44,12 @@ ${mobile(
 `
 
 const Rigth =  styled.div`
-display:flex;
-justify-content: flex-end;
-padding:5px;
+// display:flex;
+// justify-content: flex-end;
+// padding:5px;
 flex:1;
 ${mobile(
-    {justifyContent: 'center'}
+    {flex:'2',justifyContent: 'center'}
 )}
 }
 
@@ -84,7 +84,7 @@ font-size: 14px;
 cursor:pointer;
 margin-left: 20px;
 ${mobile(
-    {fontSize: '14px'}
+    {fontSize: '14px',marginLeft:'10px'}
 )}
 }
 `

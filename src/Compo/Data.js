@@ -1,4 +1,4 @@
- const  data = [
+const  data = [
     {
         "categoria": "Aretes",
         "createdAt": "2021-10-17T07:38:13.464Z",
@@ -80,4 +80,6 @@
         "updatedAt": "2021-10-17T07:38:13.464Z"
       }
 ]
+
+
 export default data

@@ -1,24 +1,27 @@
 import React ,{useState,useEffect} from 'react';
 import styled from 'styled-components';
 import Amplify, {API,graphqlOperation} from 'aws-amplify'
-import confi from '../aws-exports'
+import confi from '../aws-exports';
+import {mobile,table,all} from './Responsive';
 // import {listCates} from '../graphql/queries'
-// import {categorie} from './CategoriesData'
+import {categorie} from './CategoriesData'
 import CategorieItem from '../Compo/CategorieItem'
 Amplify.configure(confi)
 
 const Container = styled.div`
 display:flex;
-// padding:3px;
-justify-content:space-around;
-
+justify-content:center;
+${mobile(
+  {padding: '0px',flexDirection: 'column',border: '1px solid'}
+)}
+}
 `
 
 
 const Categories = (props) => {
 
 
-  const [categorie ,setCategorie] = useState([])
+  // const [categorie ,setCategorie] = useState([])
 
       //  useEffect(()=>{
       //    fetchCate()
