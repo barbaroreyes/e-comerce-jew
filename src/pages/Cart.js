@@ -11,7 +11,6 @@ const Wrapper = styled.div`
 padding:20px`
 
 const Title = styled.h1`
-
 font-weight:300;
 text-align:center;
 `;
@@ -54,31 +53,41 @@ text-align:center;
 `
 
 const Bottom = styled.div`
-// border:1px solid black ;
+
 display:flex;
-justify-content:space-between;
+justify-content:center;
+align-items:center;
+// width:100%;
+
+
 
 `
 const Info= styled.div`
 flex:3;
 display:flex;
-justify-content:space-around;
+justify-content:center;
+flex-direction:column;
+alig
 
 `
 const Sumary = styled.div`
 flex:1;`
 
 const Product= styled.div`
+width: 45%;
 display:flex;
-background-color:rgb(63,56,50);
+
 border-radius:20px 20px;
 padding:20px;
 `
 const ProdutDetails = styled.div`
 display:flex;
 justify-content:space-between;
-border:5px solid white;
+// border:5px solid white;
 border-radius:20px 20px;
+&:hover{
+    background-color:rgb(63,56,50);
+}
 `
 const Details= styled.div`
 display:flex;
@@ -89,15 +98,17 @@ padding:20px;
 border-radius:20px 20px;
 `
 const Image= styled.img`
-width:350px;
+display:flex;
+width: 300px;
 border-radius:20px 20px;
+object-fit:cover;
 `
 const ProdutName = styled.span`
 
 width:100px;
 padding:8px;
 box-shadow:4px 4px;
-// border: 2px solid white ;
+
 width:100%;
 color:#ffff;
 font-weight:700;
@@ -148,6 +159,13 @@ margin:15px;
  font-weight:700;
  font-size:40px;
  `
+ const Hr = styled.hr`
+  background-color:rgb(63,56,50);
+  width:100%;
+  border:0.5px solid rgb(63,56,50);
+  
+ `
+
 
 const Cart = () => {
   return (
@@ -181,14 +199,32 @@ const Cart = () => {
                                     cantidad  1
                                    </Amount>
                                <ProductAmountContainer>
-                               precio $2
-                                  
-                               </ProductAmountContainer>
-                              
-                           </Price>
+                                   precio $2
+                              </ProductAmountContainer>
+                            </Price>
                              </Details>
-
-                      </ProdutDetails>
+                    </ProdutDetails>
+                  </Product>
+                  <Hr/>
+                  <Product>
+                      <ProdutDetails>
+                      <Image src='https://ecomercec9b5366954ad45c183a02ba23f9f2d3c122320-dev.s3.amazonaws.com/public/Anillos2.jpeg'/>
+                          <Details>
+                              <ProdutName>Agollas</ProdutName> 
+                              <ProductId>sdasdsdsds123</ProductId>
+                           <Price>
+                               <AddContainer>
+                               <Add/> <Remove/>
+                               </AddContainer>
+                                   <Amount>
+                                    cantidad  1
+                                   </Amount>
+                               <ProductAmountContainer>
+                                   precio $2
+                              </ProductAmountContainer>
+                            </Price>
+                             </Details>
+                    </ProdutDetails>
                   </Product>
               </Info>
               <Sumary>sumary</Sumary>
