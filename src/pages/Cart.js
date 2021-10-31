@@ -70,8 +70,7 @@ flex-direction:column;
 alig
 
 `
-const Sumary = styled.div`
-flex:1;`
+
 
 const Product= styled.div`
 width: 45%;
@@ -165,8 +164,25 @@ margin:15px;
   border:0.5px solid rgb(63,56,50);
   
  `
+ const Sumary = styled.div`
+border:1px solid black;
+flex:1;
+display:flex;
+justify=-conten:center;
+flex-direction:column;
+aling-items:center
+`
+ const SumaryTitle = styled.div`
+ `
+ const SumaryItem = styled.div`
+`
+const SumaryText = styled.div`
+;`
+const ItemPrice = styled.div`
+;`
+const Button = styled.button`
 
-
+`
 const Cart = () => {
   return (
     <Container>
@@ -227,7 +243,24 @@ const Cart = () => {
                     </ProdutDetails>
                   </Product>
               </Info>
-              <Sumary>sumary</Sumary>
+              <Sumary >
+                  <h1>Sumary</h1>
+              <SumaryTitle>sumary</SumaryTitle>
+              <SumaryItem> 
+               <SumaryText>subtotal</SumaryText>
+              <ItemPrice>$80</ItemPrice></SumaryItem>
+             <SumaryItem>
+                 <SumaryText>Shipping </SumaryText>
+                 <ItemPrice>-5.99</ItemPrice>
+             </SumaryItem>
+             <SumaryItem>
+                 <SumaryText type='total'>Total </SumaryText>
+                 <ItemPrice>-5.99</ItemPrice>
+             </SumaryItem>
+             <Button>
+                 Check Now
+             </Button>
+              </Sumary>
          </Bottom>
          
      </Wrapper>
