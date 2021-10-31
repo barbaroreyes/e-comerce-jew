@@ -8,11 +8,11 @@ import {mobilex,mobile,table,all} from './Responsive'
 const Container =  styled.div`
 height: 100px;
 ${mobilex(
-    {backgroundColor: 'grey',}
+    {backgroundColor: 'grey',height:"70px",border:'1px solid red',padding:'10px'}
 )}
 }
 ${mobile(
-    {backgroundColor: 'red',}
+    {backgroundColor: 'red'}
 )}
 }
 ${table(
@@ -20,7 +20,7 @@ ${table(
 )}
 }
 ${all(
-    {backgroundColor: 'grey'}
+    {backgroundColor: 'blue'}
 )}
 }
 `
@@ -30,8 +30,8 @@ const  Wrapper =  styled.div`
  display:flex;
  justify-content: space-between;
  align-items:center;
- ${mobile(
-    {border: '2px solid black',justifyContent: 'space-around'}
+ ${mobilex(
+    {justifyContent: 'center'}
 )}
 }
 `
@@ -44,7 +44,7 @@ const Lang = styled.span`
 font-size: 12px;
 display:flex;
 align-items:center;
-${mobile(
+${mobilex(
     {display: 'none'}
 )}
 }
@@ -83,7 +83,7 @@ const Logo = styled.h2`
 font-weith :bold;
 font-size: 34px;
 ${mobile(
-    {fontSize: '18px'}
+    {fontSize: '10px'}
 )}
 `
 const MenuItem =  styled.div`

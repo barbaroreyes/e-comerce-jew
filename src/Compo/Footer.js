@@ -2,22 +2,30 @@
 import React from 'react';
 import styled from 'styled-components';
 import {EmailRounded, Facebook,Instagram,PhoneAndroid,Room,WhatsApp} from '@material-ui/icons'
+import {mobilex,mobile,table,all} from './Responsive'
 
 const Container = styled.div `
 display:flex;
-justify-content:center;
-flex-direction:row;
-align-items:center;
-background-color:#FAFAFA;
-text-align:center;
+// justify-content:center;
+// flex-direction:row;
+// align-items:center;
+// background-color:#FAFAFA;
+// text-align:center;
+${mobilex(
+  {backgroundColor: 'grey',flexDirection: 'column',justifyContent:'center'}
+)}
+}
 `
 const Left = styled.div `
 flex:1;
-padding:13px;
-display:flex;
-flex-direction:column;
-align-items:center;
-
+// padding:13px;
+// display:flex;
+// flex-direction:column;
+// align-items:center;
+${mobilex(
+  {backgroundColor: 'blue',padding:'5px'}
+)}
+}
 `
 const Center = styled.div `
 flex:1;
@@ -59,8 +67,8 @@ flex:1;
 
 const Des = styled.p `
 flex:1;
-margin:30px 0px; 
-padding:10px;
+// margin:30px 0px; 
+padding:5px;
 
 `
 
@@ -106,7 +114,7 @@ const Footer = () => {
           Lorem ipsum dolor sit amet consectetur, 
           adipisicing elit. Dolores eum accusamus quam ab, commodi eaque? Voluptatem in cupiditate cum nesciunt aspernatur,
            expedita eaque debitis delectus quidem minima quo ipsam obcaecati qui 
-           consequatur quasi fuga eligendi accusamus doloribus hic, harum optio! Accusamus qui aliquid, ad dolorem possimus fuga culpa animi molestiae.
+          
           </Des>
           <SocialContaimer>
          <SocialIcon color='rgb(169,157,129)'>
