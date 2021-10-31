@@ -54,7 +54,7 @@ text-align:center;
 `
 
 const Bottom = styled.div`
-border:1px solid black ;
+// border:1px solid black ;
 display:flex;
 justify-content:space-between;
 
@@ -62,20 +62,24 @@ justify-content:space-between;
 const Info= styled.div`
 flex:3;
 display:flex;
-justify-content:space-between;
-border:2px solid black;
+justify-content:space-around;
+
 `
 const Sumary = styled.div`
 flex:1;`
 
 const Product= styled.div`
 display:flex;
+background-color:rgb(63,56,50);
+border-radius:20px 20px;
+padding:20px;
 `
 const ProdutDetails = styled.div`
 display:flex;
 justify-content:space-between;
-padding:10px;
-border:1px solid 
+// padding:10px;
+border:5px solid white;
+border-radius:20px 20px;
 `
 const Details= styled.div`
 display:flex;
@@ -83,25 +87,35 @@ justify-content:space-around;
 flex-direction:column;
 align-items:center;
 padding:20px;
-
+border-radius:20px 20px;
 `
 const Image= styled.img`
-width:300px;
+width:450px;
+border-radius:20px 20px;
 `
-const ProdutName = styled.div`
-border:1px solid ;
+const ProdutName = styled.span`
+
+width:100px;
+padding:8px;
+box-shadow:4px 4px;
+// border: 2px solid white ;
+width:100%;
+color:#ffff;
+
+`
+const ProductId = styled.span`
+box-shadow:4px 4px;
 width:100px;
 padding:10px;
-`
-const ProductId = styled.div`
-border:1px solid ;
-width:100px;
-padding:10px;
+width:100%;
+color:#ffff;
 `
 const Price = styled.div`
-border:1px solid ;
-width:100px;
+box-shadow:4px 4px;
+width:100%;
+color:#ffff;
 padding:10px;
+
 `
 
 const Cart = () => {
@@ -127,7 +141,7 @@ const Cart = () => {
                       <Image src='https://ecomercec9b5366954ad45c183a02ba23f9f2d3c122320-dev.s3.amazonaws.com/public/joyeria+fotos/Argollas1.jpeg'/>
                           <Details>
                               <ProdutName>Agollas</ProdutName> 
-                              <ProductId>ProductId</ProductId>
+                              <ProductId>sdasdsdsds123</ProductId>
                            <Price>Price</Price>
                              </Details>
 
