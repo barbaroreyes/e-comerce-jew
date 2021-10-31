@@ -36,7 +36,11 @@ flex:1;
 const Lang = styled.span`
 font-size: 12px;
 display:flex;
-align-items:center
+align-items:center;
+${mobile(
+    {display: 'none'}
+)}
+}
 `
 
 const Rigth =  styled.div`
@@ -44,6 +48,10 @@ display:flex;
 justify-content: flex-end;
 padding:5px;
 flex:1;
+${mobile(
+    {justifyContent: 'center'}
+)}
+}
 
 `
 const Center =  styled.div`
@@ -59,15 +67,26 @@ padding:1px;
 `
 const Input = styled.input`
 border: none;
+${mobile(
+    {width: '50px'}
+)}
+}
 `
 const Logo = styled.h1`
 font-weith :bold;
 font-size: 34px;
+${mobile(
+    {fontSize: '24px'}
+)}
 `
 const MenuItem =  styled.div`
 font-size: 14px;
 cursor:pointer;
 margin-left: 20px;
+${mobile(
+    {fontSize: '14px'}
+)}
+}
 `
 
 const NavBar = () => {
@@ -77,7 +96,7 @@ const NavBar = () => {
          <Left>
              <Lang>Lang</Lang>
              <SearchContainer>
-                 <Input/>
+                 <Input placeholder='search'/>
                  <Search style={{color:'grey', fontSize:'16px'}}/>
              </SearchContainer>
          </Left>
