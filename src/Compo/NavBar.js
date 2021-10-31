@@ -3,9 +3,21 @@ import {Link} from 'react-router-dom'
 import styled from 'styled-components';
 import {Search, ShoppingCartOutlined} from '@material-ui/icons'
 import {Badge} from '@material-ui/core'
+import {mobile,table,all} from './Responsive'
 const Container =  styled.div`
 height: 100px;
-
+${mobile(
+    {backgroundColor: 'red'}
+)}
+}
+${table(
+    {backgroundColor: 'black'}
+)}
+}
+${all(
+    {backgroundColor: 'grey'}
+)}
+}
 `
 
 const  Wrapper =  styled.div`

@@ -165,23 +165,33 @@ margin:15px;
   
  `
  const Sumary = styled.div`
-border:1px solid black;
+border:0.6px solid black;
 flex:1;
-display:flex;
-justify=-conten:center;
-flex-direction:column;
-aling-items:center
+border-radius:10px;
+heigth:50vh;
+padding:20px;
 `
  const SumaryTitle = styled.div`
+ font-weight:200;
  `
  const SumaryItem = styled.div`
+ display:flex;
+ justify-content:space-between;
+ font-weight: ${props => props.type === 'total' && '500'};
+ font-size: ${props => props.type === 'total' && '24px'};
 `
-const SumaryText = styled.div`
+const SumaryText = styled.span`
 ;`
-const ItemPrice = styled.div`
+const ItemPrice = styled.span`
 ;`
 const Button = styled.button`
-
+width:40%;
+border:1px solid;
+border:radius:10px 7px; 
+background-color:black;
+color:white;
+font-weight:400;
+padding: 5px;
 `
 const Cart = () => {
   return (
@@ -253,8 +263,8 @@ const Cart = () => {
                  <SumaryText>Shipping </SumaryText>
                  <ItemPrice>-5.99</ItemPrice>
              </SumaryItem>
-             <SumaryItem>
-                 <SumaryText type='total'>Total </SumaryText>
+             <SumaryItem type='total'>
+                 <SumaryText >Total </SumaryText>
                  <ItemPrice>-5.99</ItemPrice>
              </SumaryItem>
              <Button>
