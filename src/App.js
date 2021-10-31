@@ -1,15 +1,23 @@
 
 import './App.css';
 import {Switch, Route} from 'react-router-dom'
+import styled from 'styled-components';
 import Home from './pages/Home';
 import Products from './pages/ProductsList';
 import Product from './pages/Product';
 import Register from './pages/Register';
 import Login from './pages/Login';
 import Cart from './pages/Cart';
+import {mobilex,mobile,table,all} from './Compo/Responsive'
+
+
+const Container = styled.div`
+text-align:center;
+`
+
 function App() {
   return (
-    <div className="App">
+    <Container >
       <Switch>
         <Route exact path='/'>
           <Home/>
@@ -30,7 +38,7 @@ function App() {
            <Cart/>
         </Route>
       </Switch>
-    </div>
+    </Container>
   );
 }
 
