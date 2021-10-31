@@ -4,10 +4,11 @@ import styled from 'styled-components';
 import {Search, ShoppingCartOutlined} from '@material-ui/icons'
 import {Badge} from '@material-ui/core'
 import {mobilex,mobile,table,all} from './Responsive'
+
 const Container =  styled.div`
 height: 100px;
 ${mobile(
-    {backgroundColor: 'grey',justifyContent: 'space-between',height: '75px'}
+    {backgroundColor: 'grey',justifyContent: 'space-around',height: '85px'}
 )}
 }
 ${table(
@@ -22,11 +23,13 @@ ${all(
 
 const  Wrapper =  styled.div`
  padding: 10px 20px ;
- 
- 
  display:flex;
  justify-content: space-between;
  align-items:center;
+ ${mobile(
+    {justifyContent: 'center'}
+)}
+}
 `
 const Left =  styled.div`
 display:flex;
@@ -76,7 +79,7 @@ const Logo = styled.h2`
 font-weith :bold;
 font-size: 34px;
 ${mobile(
-    {fontSize: '20px'}
+    {fontSize: '18px'}
 )}
 `
 const MenuItem =  styled.div`
