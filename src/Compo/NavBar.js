@@ -7,7 +7,7 @@ import {mobile,table,all} from './Responsive'
 const Container =  styled.div`
 height: 100px;
 ${mobile(
-    {backgroundColor: 'red'}
+    {backgroundColor: 'red',justifyContent: 'space-between',height: '75px'}
 )}
 }
 ${table(
@@ -49,7 +49,7 @@ const Rigth =  styled.div`
 // padding:5px;
 flex:1;
 ${mobile(
-    {flex:'2',justifyContent: 'center'}
+    {justifyContent: 'center'}
 )}
 }
 
@@ -72,11 +72,11 @@ ${mobile(
 )}
 }
 `
-const Logo = styled.h1`
+const Logo = styled.h2`
 font-weith :bold;
 font-size: 34px;
 ${mobile(
-    {fontSize: '24px'}
+    {fontSize: '20px'}
 )}
 `
 const MenuItem =  styled.div`
@@ -84,7 +84,7 @@ font-size: 14px;
 cursor:pointer;
 margin-left: 20px;
 ${mobile(
-    {fontSize: '14px',marginLeft:'10px'}
+    {fontSize: '10px',marginLeft:'8px'}
 )}
 }
 `
