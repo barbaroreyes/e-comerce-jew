@@ -10,16 +10,17 @@ flex:1;
 margin: 4px;
 heigth:100vh;
 position:relative;
-${mobile(
-  {width: '100%',justifyContent:'center',margin:"2px"}
-)}
-}
+
 
 `
 const Image = styled.img`
 width:100%;
 heigth:100%;
 object-fit:cover;
+${mobile(
+  {heigth:'20vh',margin:"2px"}
+)}
+}
 `
 const Info = styled.div`
 position:absolute;
