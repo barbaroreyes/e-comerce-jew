@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Anouncement from '../Compo/Anouncement';
 import Footer from '../Compo/Footer';
 import NavBar from '../Compo/NavBar';
-
+import {Remove,Add} from '@material-ui/icons';
 
 const Container = styled.div``
 
@@ -90,7 +90,7 @@ padding:20px;
 border-radius:20px 20px;
 `
 const Image= styled.img`
-width:450px;
+width:350px;
 border-radius:20px 20px;
 `
 const ProdutName = styled.span`
@@ -111,12 +111,36 @@ width:100%;
 color:#ffff;
 `
 const Price = styled.div`
-box-shadow:4px 4px;
+display:flex;
+flex-direction:column;
+align-items:center;
+// box-shadow:4px 4px;
 width:100%;
 color:#ffff;
 padding:10px;
+font-size:20px;
+padding:9px;
+margin:10px;
+border:3px solid 
+`
+const ProductAmountContainer = styled.div`
+margin:10px;
 
 `
+const Amount = styled.span`
+margin:15px;
+// width:30px;
+// height:30px;
+// border-radius:10px;
+// display:flex;
+// align-items:center;
+// justify-content:center;
+
+ `
+ const AddContainer = styled.div`
+ 
+ font-size:40px;
+ `
 
 const Cart = () => {
   return (
@@ -142,7 +166,19 @@ const Cart = () => {
                           <Details>
                               <ProdutName>Agollas</ProdutName> 
                               <ProductId>sdasdsdsds123</ProductId>
-                           <Price>Price</Price>
+                           <Price>
+                               <AddContainer>
+                               <Add/> <Remove/>
+                               </AddContainer>
+                                   <Amount>
+                                    cantidad  1
+                                   </Amount>
+                               <ProductAmountContainer>
+                               precio $2
+                                  
+                               </ProductAmountContainer>
+                              
+                           </Price>
                              </Details>
 
                       </ProdutDetails>
