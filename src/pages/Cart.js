@@ -77,7 +77,6 @@ padding:20px;
 const ProdutDetails = styled.div`
 display:flex;
 justify-content:space-between;
-// padding:10px;
 border:5px solid white;
 border-radius:20px 20px;
 `
@@ -125,16 +124,19 @@ border:3px solid
 `
 const ProductAmountContainer = styled.div`
 margin:10px;
-
+&:hover{
+    background-color: #fff;
+    color:rgb(63,56,50);
+    
+}
 `
 const Amount = styled.span`
 margin:15px;
-// width:30px;
-// height:30px;
-// border-radius:10px;
-// display:flex;
-// align-items:center;
-// justify-content:center;
+&:hover{
+    background-color: #fff;
+    color:rgb(63,56,50);
+    // text-decoration: line-through;
+}
 
  `
  const AddContainer = styled.div`
