@@ -7,8 +7,12 @@ import {mobilex,mobile,table,all} from './Responsive'
 
 const Container =  styled.div`
 height: 100px;
+${mobilex(
+    {backgroundColor: 'grey',}
+)}
+}
 ${mobile(
-    {backgroundColor: 'grey',justifyContent: 'space-around',height: '85px'}
+    {backgroundColor: 'red',}
 )}
 }
 ${table(
@@ -26,8 +30,8 @@ const  Wrapper =  styled.div`
  display:flex;
  justify-content: space-between;
  align-items:center;
- ${mobilex(
-    {justifyContent: 'center'}
+ ${mobile(
+    {border: '2px solid black',justifyContent: 'space-around'}
 )}
 }
 `
@@ -52,7 +56,7 @@ const Rigth =  styled.div`
 // padding:5px;
 flex:1;
 ${mobile(
-    {justifyContent: 'center'}
+    {justifyContent: 'flex-end'}
 )}
 }
 
@@ -71,7 +75,7 @@ padding:1px;
 const Input = styled.input`
 border: none;
 ${mobile(
-    {width: '50px'}
+    {width: '40px'}
 )}
 }
 `
@@ -87,7 +91,7 @@ font-size: 14px;
 cursor:pointer;
 margin-left: 20px;
 ${mobile(
-    {fontSize: '10px',marginLeft:'8px'}
+    {fontSize: '10px',margin:'6px'}
 )}
 }
 `

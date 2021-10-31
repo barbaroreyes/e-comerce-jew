@@ -8,7 +8,7 @@ export const mobile = (props) => {
 }
 export const mobilex = (props) => {
     return css `
-    @media only screen and (min-width:320px){
+    @media only screen and (min-width:321px){
         ${props}
     `
 }
