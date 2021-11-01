@@ -8,6 +8,7 @@ import Register from './pages/Register';
 import Login from './pages/Login';
 import Cart from './pages/Cart';
 import Data from './Compo/Data'
+import {categorie} from './Compo/CategoriesData'
 import ProductsList from './pages/ProductsList';
 
 
@@ -23,7 +24,7 @@ function App() {
     <Container >
       <Switch>
         <Route exact path='/'>
-          <Home/>
+          <Home data={categorie}/>
         </Route>
         <Route exact path='/productslist'>
            <ProductsList data={Data} />

@@ -16,8 +16,8 @@ ${mobilex(
   {width: '100%'}
 )}
 }
-${table(
-  {display: 'none'}
+${all(
+  {flexDirection: 'row'}
 )}
 }
 `;
@@ -65,14 +65,14 @@ ${mobilex(
 const ImageContainer = styled.div`
 display:flex;
 flex:1;
-height:100%;
+height:40%;
 ${mobilex(
   {height:'100%'}
 )}
 }
 `
 const Image = styled.img`
-height:50%;
+height:100%;
 ${mobilex(
   {height:'100%'}
 )}

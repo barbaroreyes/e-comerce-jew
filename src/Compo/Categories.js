@@ -1,21 +1,21 @@
 import React ,{useState,useEffect} from 'react';
 import styled from 'styled-components';
-import Amplify, {API,graphqlOperation} from 'aws-amplify'
-import confi from '../aws-exports';
+// import Amplify, {API,graphqlOperation} from 'aws-amplify'
+// import confi from '../aws-exports';
 import {mobile,mobilex,table,all} from './Responsive';
 // import {listCates} from '../graphql/queries'
-import {categorie} from './CategoriesData'
+// import {categorie} from './CategoriesData'
 import CategorieItem from '../Compo/CategorieItem'
-Amplify.configure(confi)
+// Amplify.configure(confi)
 
 const Container = styled.div`
 display:flex;
-justify-content:space-around;
+
 ${mobilex(
   {flexDirection: 'column',padding:'10px'}
 )}
-${table(
-  {flexDirection: 'column'}
+${all(
+  {flexDirection: 'row'}
 )}
 }
 `
@@ -40,10 +40,10 @@ const Categories = (props) => {
            
       //    }
       //  }
-       console.log('categorie',categorie)
+       console.log('categorie',props.data)
   return (
     <Container>
-      {categorie.map((item,i)=> {
+      {props.data.map((item,i)=> {
           return(
               <CategorieItem  key={i}item={item}/>
           )
