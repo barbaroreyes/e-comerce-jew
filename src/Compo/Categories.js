@@ -4,7 +4,6 @@ import Amplify, {API,graphqlOperation} from 'aws-amplify'
 import confi from '../aws-exports';
 import {mobile,mobilex,table,all} from './Responsive';
 import {listCates} from '../graphql/queries'
-import {categorie} from './CategoriesData'
 import CategorieItem from '../Compo/CategorieItem'
 Amplify.configure(confi)
 

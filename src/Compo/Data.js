@@ -14,7 +14,7 @@ const  data = [
         "createdAt": "2021-10-17T07:38:13.464Z",
         "description": "Esclava con dije de  Sol",
         "id": "8",
-        "image": "https://ecomercec9b5366954ad45c183a02ba23f9f2d3c122320-dev.s3.amazonaws.com/public/joyeria+fotos/gargantilla-con-sol.jpeg",
+        "image": "https://ecomercejew7b6e695de0ef4126badbc7db32fd927c112134-dev.s3.amazonaws.com/public/gargantilla-con-sol.jpeg",
         "name": "Esclavas",
         "price": 1.5,
         "updatedAt": "2021-10-17T07:38:13.464Z"
