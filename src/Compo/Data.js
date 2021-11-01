@@ -24,7 +24,7 @@ const  data = [
         "createdAt": "2021-10-17T07:38:13.464Z",
         "description": "aretes",
         "id": "1",
-        "image": "https://ecomercec9b5366954ad45c183a02ba23f9f2d3c122320-dev.s3.amazonaws.com/public/joyeria+fotos/Argollas1.jpeg",
+        "image": "https://ecomercejew7b6e695de0ef4126badbc7db32fd927c112134-dev.s3.amazonaws.com/public/Argollas1.jpeg",
         "name": "Aretes",
         "price": 1.5,
         "updatedAt": "2021-10-17T07:38:13.464Z"
