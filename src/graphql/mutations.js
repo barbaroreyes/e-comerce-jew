@@ -61,6 +61,7 @@ export const createCate = /* GraphQL */ `
       id
       name
       price
+      image
       createdAt
       updatedAt
     }
@@ -75,6 +76,7 @@ export const updateCate = /* GraphQL */ `
       id
       name
       price
+      image
       createdAt
       updatedAt
     }
@@ -89,6 +91,7 @@ export const deleteCate = /* GraphQL */ `
       id
       name
       price
+      image
       createdAt
       updatedAt
     }
