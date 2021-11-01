@@ -96,7 +96,8 @@ align-items:center;
 justify-content:center;
 
  `
-const Product = () => {
+const Product = (props) => {
+  console.log('props en simgle')
   return (
     <Container>
       <NavBar/>

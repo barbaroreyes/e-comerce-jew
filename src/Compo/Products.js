@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import Data from '../Compo/Data';
 import Product from '../Compo/Product'
 import {mobilex,mobile,table,all} from './Responsive'
 const Container = styled.div `
@@ -8,17 +7,19 @@ display:flex;
 flex-wrap: wrap;
 justify-content:space-between;
 ${mobilex(
-  {display: 'none'}
+  { flexDirection: 'column'}
 )}
 }
 `
 
-const Products = () => {
+const Products = (props) => {
+  
   return (
     <Container>
-      {Data.map((item,i)=>{
+      {props.data.map((item,i)=>{
+        
           return (
-              <Product item={item} key={i}/>
+              <Product {...item} key={i}/>
           )
       })}
     </Container>

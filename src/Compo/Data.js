@@ -34,7 +34,7 @@ const  data = [
         "createdAt": "2021-10-17T07:38:13.464Z",
         "description": "Cadena con dije de Livelula",
         "id": "6",
-        "image": "https://lamjce9b1a58db81496d90b0f125b07c8929185751-dev.s3.amazonaws.com/public/cadenaconivelula.jpeg",
+        "image": "https://ecomercejew7b6e695de0ef4126badbc7db32fd927c112134-dev.s3.amazonaws.com/public/cadena-con-luna.jpeg",
         "name": "Cadena",
         "price": 1.5,
         "updatedAt": "2021-10-17T07:38:13.464Z"
@@ -44,7 +44,7 @@ const  data = [
         "createdAt": "2021-10-17T07:38:13.464Z",
         "description": "Aro con Dije de Flor",
         "id": "5",
-        "image": "https://lamjce9b1a58db81496d90b0f125b07c8929185751-dev.s3.amazonaws.com/public/Arosconflor.jpeg",
+        "image": "https://ecomercejew7b6e695de0ef4126badbc7db32fd927c112134-dev.s3.amazonaws.com/public/Arosconflor.jpeg",
         "name": "Aro",
         "price": 1.5,
         "updatedAt": "2021-10-17T07:38:13.464Z"
@@ -54,7 +54,7 @@ const  data = [
         "createdAt": "2021-10-17T07:38:13.464Z",
         "description": "Aro con Dije de Oso",
         "id": "4",
-        "image": "https://lamjce9b1a58db81496d90b0f125b07c8929185751-dev.s3.amazonaws.com/public/Aro-con-oso.jpeg",
+        "image": "https://ecomercejew7b6e695de0ef4126badbc7db32fd927c112134-dev.s3.amazonaws.com/public/Aro-con-oso.jpeg",
         "name": "Aro",
         "price": 1.5,
         "updatedAt": "2021-10-17T07:38:13.464Z"
@@ -64,7 +64,7 @@ const  data = [
         "createdAt": "2021-10-17T07:38:13.464Z",
         "description": "Cadena con dije de  Egipto",
         "id": "7",
-        "image": "https://lamjce9b1a58db81496d90b0f125b07c8929185751-dev.s3.amazonaws.com/public/conjunto-manilla-cadena-egipto.jpeg",
+        "image": "https://ecomercejew7b6e695de0ef4126badbc7db32fd927c112134-dev.s3.amazonaws.com/public/cadena-con-dije-2.jpeg",
         "name": "Conjunto",
         "price": 1.5,
         "updatedAt": "2021-10-17T07:38:13.464Z"
@@ -74,7 +74,7 @@ const  data = [
         "createdAt": "2021-10-17T07:38:13.464Z",
         "description": "aretes-aros-perlas",
         "id": "3",
-        "image": "https://lamjce9b1a58db81496d90b0f125b07c8929185751-dev.s3.amazonaws.com/public/aretes-aros-perlas.jpeg",
+        "image": "https://ecomercejew7b6e695de0ef4126badbc7db32fd927c112134-dev.s3.amazonaws.com/public/aretes-aros-perlas.jpeg",
         "name": "Conjunto",
         "price": 1.5,
         "updatedAt": "2021-10-17T07:38:13.464Z"

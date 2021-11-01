@@ -5,12 +5,21 @@ import Anouncement from '../Compo/Anouncement';
 import Products from '../Compo/Products';
 import Footer from '../Compo/Footer';
 import NewLetter from '../Compo/NewLetter';
+import {mobilex,mobile,table,all} from '../Compo/Responsive'
+
 const Container = styled.div`
 
+width:100%;
 `
 const FilterContainer= styled.div`
 display:flex;
- justify-content: space-between;
+justify-content:center;
+
+
+${mobilex(
+  {backgroundColor: 'grey',justifyContent: 'center'}
+)}
+}
  `
 const Title = styled.h1`
 margin:20px;
@@ -32,14 +41,15 @@ margin:20px;
 
  `
 ;
-const ProductsList = () => {
+const ProductsList = (props) => {
+  console.log('props ProductsList', props);
   return (
     <Container>
       <NavBar/>
       <Anouncement/>
-      <Title>Dresses</Title>
+      <Title>Prendas</Title>
       <FilterContainer>
-        <Filter><FilterText>Filter Products</FilterText>
+        <Filter><FilterText>Filter </FilterText>
         <Select>
             <Option disabled selected>Categoria</Option>
             <Option>Aretes</Option>
@@ -64,7 +74,7 @@ const ProductsList = () => {
         </Select>
         </Filter>
       </FilterContainer>
-      <Products/>
+      <Products {...props}/>
       <NewLetter/>
       <Footer/>
     </Container>

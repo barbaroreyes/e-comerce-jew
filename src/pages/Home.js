@@ -11,10 +11,10 @@ const Home = () => {
   return (
     <div>
      < NavBar/>
-     {/* <Anouncement/>  */}
+     <Anouncement/> 
      <Slider/>
      <Categories/>
-     <Products/>
+     {/* <Products/> */}
      <NewLetter/>
      <Footer/>
     </div>

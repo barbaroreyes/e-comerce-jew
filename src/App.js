@@ -8,7 +8,9 @@ import Product from './pages/Product';
 import Register from './pages/Register';
 import Login from './pages/Login';
 import Cart from './pages/Cart';
+import Data from './Compo/Data'
 import {mobilex,mobile,table,all} from './Compo/Responsive'
+import ProductsList from './pages/ProductsList';
 
 
 const Container = styled.div`
@@ -26,7 +28,7 @@ function App() {
           <Home/>
         </Route>
         <Route exact path='/productslist'>
-           <Products/>
+           <ProductsList data={Data} />
         </Route>
         <Route exact path='/product:id'>
            <Product/>

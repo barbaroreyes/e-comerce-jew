@@ -66,11 +66,13 @@ transition: all 0.5s ease;
 }
 `
 
-const Product = ({item}) => {
+const Product = (props) => {
+    console.log('item',props.categoria);
   return (<Container>
-           <Circle/>
-           <Image src={item.image}/>
+           {/* <Circle/> */}
+           <Image src={props.image}/>
            <Info>
+             {props.categoria}
                <Icon>
                    <ShoppingCartOutlined/>
                </Icon>
