@@ -42,46 +42,56 @@ z-index:2;
 
 `
 const Wrapper = styled.div`
-hight:100%;
+hight:80%;
 display:flex;
 justify-content: center;
 align-items: center;
 transition: all 2s ease;
 transform: translateX(${props => props.slideIndex * -100}vw);
+
 `
 const Slide = styled.div`
-width: 100vw;
-higthL100vh;
 display:flex;
-align-items: center;
+width: 100vw;
+higth:100vh;
+flex-direction:row;
+justify-content: center;
 align-items: center;
 background-color:${props => props.bg};
 ${mobilex(
-  {height:'100%'}
+  {height:'100vh'
+  ,width: '100vw'
+,border: '1px solid',
+flexWrapper: 'wrap'
+}
 )}
 }
 
 `
 const ImageContainer = styled.div`
-display:flex;
-flex:1;
-height:80vh;
+width:50%;
+height:80%;
+
+
 ${mobilex(
-  {height:'100%'}
+  {width:'77%',height:'60%'}
 )}
 }
 `
 const Image = styled.img`
-width:70%;
-height:100%;
+
+
 ${mobilex(
-  {height:'100%'}
+  {width:'100%',height:'100%'}
 )}
 }
 `
 const InfoConten = styled.div`
-flex:1;
-padding:50px;
+width:35%;
+${mobilex(
+  {width:'22%',height:'100%'}
+)}
+}
 `
 const Title = styled.h1`font-size:70px`
 const Description = styled.p`
