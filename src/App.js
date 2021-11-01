@@ -13,6 +13,9 @@ import {mobilex,mobile,table,all} from './Compo/Responsive'
 
 const Container = styled.div`
 text-align:center;
+font-family: 'Dancing Script';
+font-weight: 700;
+
 `
 
 function App() {

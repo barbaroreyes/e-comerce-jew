@@ -18,10 +18,6 @@ ${mobilex(
 `
 const Left = styled.div `
 flex:1;
-// padding:13px;
-// display:flex;
-// flex-direction:column;
-// align-items:center;
 ${mobilex(
   {backgroundColor: 'blue',padding:'5px'}
 )}
@@ -33,7 +29,10 @@ padding:13px;
 display:flex;
 flex-direction:column;
 align-items:center;
-
+${mobilex(
+  {display:'none'}
+)}
+}
 
 `
 const Title = styled.h1 `
