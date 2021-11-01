@@ -82,7 +82,7 @@ border-radius: 70px 70px;
 width:100%;
 height:100px;
 ${mobilex(
-  {width:'100%',height:'70%'}
+  {width:'100%',height:'50%'}
 )}
 }
 `
