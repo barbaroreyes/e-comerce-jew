@@ -82,8 +82,10 @@ ${mobile(
 }
 `
 const Logo = styled.h2`
-font-weith :bold;
+font-family: 'Dancing Script';
+font-weight: 700;
 font-size: 34px;
+color:white;
 ${mobilex(
     {fontSize: '16px'}
 )}
@@ -93,7 +95,7 @@ font-size: 14px;
 cursor:pointer;
 margin-left: 20px;
 color:white;
-text-decoration:none;
+
 ${mobilex(
     {fontSize: '13px',margin:'10px'}
 )}
@@ -115,7 +117,11 @@ const NavBar = () => {
          </Left>
          
          <Rigth>
-             <MenuItem><Link  to='/register' style={{textDecoration:'none',color:'white',fontSize:'16px'}}
+             <MenuItem><Link  to='/register' 
+             style={{textDecoration:'none'
+             ,color:'white',
+             fontSize:'16px',
+             fontFamily:'Dancing Script'}}
              >Login</Link></MenuItem>
              <MenuItem>
              <Badge badgeContent={1} color="primary">
