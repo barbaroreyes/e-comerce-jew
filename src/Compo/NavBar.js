@@ -31,7 +31,7 @@ const  Wrapper =  styled.div`
  justify-content: space-between;
  align-items:center;
  ${mobilex(
-    {justifyContent: 'center'}
+    {justifyContent: 'space-between'}
 )}
 }
 `
@@ -51,9 +51,11 @@ ${mobilex(
 `
 
 const Rigth =  styled.div`
-// display:flex;
-// justify-content: flex-end;
-// padding:5px;
+display:flex;
+justify-content:center;
+flex-direction:column;
+aling-items :center;
+
 flex:1;
 ${mobile(
     {justifyContent: 'flex-end'}
@@ -83,15 +85,17 @@ const Logo = styled.h2`
 font-weith :bold;
 font-size: 34px;
 ${mobilex(
-    {fontSize: '10px'}
+    {fontSize: '16px'}
 )}
 `
 const MenuItem =  styled.div`
 font-size: 14px;
 cursor:pointer;
 margin-left: 20px;
-${mobile(
-    {fontSize: '10px',margin:'6px'}
+color:white;
+text-decoration:none;
+${mobilex(
+    {fontSize: '13px',margin:'10px'}
 )}
 }
 `
@@ -100,17 +104,19 @@ const NavBar = () => {
   return (
     <Container>
         <Wrapper>
+        <Center><Logo>La Mango Jewelry</Logo></Center>
          <Left>
+         
              <Lang>Lang</Lang>
              <SearchContainer>
                  <Input placeholder='search'/>
                  <Search style={{color:'grey', fontSize:'16px'}}/>
              </SearchContainer>
          </Left>
-         <Center><Logo>La Mango Jewelry</Logo></Center>
+         
          <Rigth>
-             <MenuItem><Link to='/register'>Sign In or Login</Link></MenuItem>
-             {/* <MenuItem>Sign in</MenuItem> */}
+             <MenuItem><Link  to='/register' style={{textDecoration:'none',color:'white',fontSize:'16px'}}
+             >Login</Link></MenuItem>
              <MenuItem>
              <Badge badgeContent={1} color="primary">
                  <ShoppingCartOutlined/>
