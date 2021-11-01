@@ -8,7 +8,7 @@ import {mobilex,mobile,table,all} from './Responsive'
 const Container =  styled.div`
 height: 100px;
 ${mobilex(
-    {backgroundColor: 'grey',height:"70px",border:'1px solid red',padding:'10px'}
+    {backgroundColor: 'grey',height:"70px",padding:'10px'}
 )}
 }
 ${mobile(

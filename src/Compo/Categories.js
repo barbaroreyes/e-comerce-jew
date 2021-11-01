@@ -10,9 +10,9 @@ Amplify.configure(confi)
 
 const Container = styled.div`
 display:flex;
-justify-content:center;
+justify-content:space-around;
 ${mobilex(
-  {flexDirection: 'column',padding:'15px',boderRadiu:'10px 10px'}
+  {flexDirection: 'column',padding:'10px'}
 )}
 ${table(
   {flexDirection: 'column'}
