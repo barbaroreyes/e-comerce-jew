@@ -1,24 +1,28 @@
 import styled from 'styled-components'
 import Product from '../Compo/Product'
 import {mobilex,mobile,table,all} from './Responsive'
+
 const Container = styled.div `
-padding: 20px;
 display:flex;
-flex-wrap: wrap;
-justify-content:space-between;
+margin:20px;
 ${mobilex(
   { flexDirection: 'column'}
 )}
 }
+${all(
+  { flexDirection: 'row'}
+)}
+}
+
 `
+
 
 const Products = (props) => {
   
   return (
     <Container>
       {props.data.map((item,i)=>{
-        
-          return (
+        return (
               <Product {...item} key={i}/>
           )
       })}

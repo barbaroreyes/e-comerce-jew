@@ -9,7 +9,7 @@ import {mobilex,mobile,table,all} from '../Compo/Responsive'
 
 const Container = styled.div`
 
-width:100%;
+
 `
 const FilterContainer= styled.div`
 display:flex;

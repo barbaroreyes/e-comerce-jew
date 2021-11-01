@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { SearchOutlined,ShoppingCartOutlined,FavoriteBorderOutlined} from '@material-ui/icons'
-
+import {mobilex,mobile,table,all} from '../Compo/Responsive'
 const Info = styled.div `
 display:flex;
 justify-content: center;
@@ -17,7 +17,7 @@ opacity:0;
 transition: all 0.5s ease;
 `
 const Container = styled.div `
-flex:1;
+// flex:1;
 display:flex;
 justify-content: center;
 align-items: center;
@@ -31,21 +31,28 @@ position:relative;
    opacity:1;
 }
 `
-const Circle = styled.div `
-width:350px;
-height:350px;
-background-color: rgb(0,0,0,0.1);
-border-radius: 50%;
-position:absolute;
-z-index:2
+// const Circle = styled.div `
+// width:350px;
+// height:350px;
+// background-color: rgb(0,0,0,0.1);
+// border-radius: 50%;
+// position:absolute;
+// z-index:2
 
-`
+// `
 
 const Image = styled.img `
-width:100%;
+width:10%;
 height:100%;
-z-index:1
-
+z-index:1;
+${mobilex(
+    {width:'100%'}
+)}
+}
+${all(
+    {width:'100%'}
+)}
+}
 
 
 `
