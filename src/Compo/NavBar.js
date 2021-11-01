@@ -63,7 +63,7 @@ ${mobile(
 `
 const Center =  styled.div`
 flex:1;
-text-align:center
+
 `
 const SearchContainer = styled.div`
 border:0.1px solid lightgray;
@@ -82,7 +82,7 @@ ${mobile(
 const Logo = styled.h2`
 font-weith :bold;
 font-size: 34px;
-${mobile(
+${mobilex(
     {fontSize: '10px'}
 )}
 `

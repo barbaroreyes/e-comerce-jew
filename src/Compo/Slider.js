@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import {ArrowLeftOutlined,ArrowRightOutlined} from '@material-ui/icons';
 import { useState } from 'react';
 import Data from '../Compo/Data'
-import {mobile,table,all} from './Responsive';
+import {mobilex,mobile,table,all} from './Responsive';
 
 const Container = styled.div`
 width: 100%; 
@@ -12,8 +12,8 @@ display:flex;
 position:relative;
 overflow:hidden;
 
-${mobile(
-  {display: 'none'}
+${mobilex(
+  {width: '100%'}
 )}
 }
 ${table(
@@ -56,14 +56,27 @@ display:flex;
 align-items: center;
 align-items: center;
 background-color:${props => props.bg};
+${mobilex(
+  {height:'100%'}
+)}
+}
 
 `
 const ImageContainer = styled.div`
+display:flex;
 flex:1;
 height:100%;
+${mobilex(
+  {height:'100%'}
+)}
+}
 `
 const Image = styled.img`
 height:50%;
+${mobilex(
+  {height:'100%'}
+)}
+}
 `
 const InfoConten = styled.div`
 flex:1;
