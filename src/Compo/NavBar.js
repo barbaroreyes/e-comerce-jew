@@ -87,7 +87,7 @@ font-weight: 700;
 font-size: 34px;
 color:white;
 ${mobilex(
-    {fontSize: '16px'}
+    {fontSize: '29px'}
 )}
 `
 const MenuItem =  styled.div`
@@ -106,7 +106,7 @@ const NavBar = () => {
   return (
     <Container>
         <Wrapper>
-        <Center><Logo>La Mango Jewelry</Logo></Center>
+        <Center><Logo>L.M.J</Logo></Center>
          <Left>
          
              <Lang>Lang</Lang>
