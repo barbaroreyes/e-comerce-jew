@@ -4,8 +4,8 @@ const  data = [
         "createdAt": "2021-10-17T07:38:13.464Z",
         "description": "aretes",
         "id": "2",
-        "image": "https://ecomercejew7b6e695de0ef4126badbc7db32fd927c112134-dev.s3.amazonaws.com/public/arito-con-dije.jpeg",
-        "name": "Aritos",
+        "image": "https://ecomercejew7b6e695de0ef4126badbc7db32fd927c112134-dev.s3.amazonaws.com/public/fondo-de+pantalla.jpeg",
+        "name": "Aretes",
         "price": 1.5,
         "updatedAt": "2021-10-17T07:38:13.464Z"
       },
@@ -25,7 +25,7 @@ const  data = [
         "description": "aretes",
         "id": "1",
         "image": "https://ecomercejew7b6e695de0ef4126badbc7db32fd927c112134-dev.s3.amazonaws.com/public/Argollas1.jpeg",
-        "name": "Aretes",
+        "name": "Argollas",
         "price": 1.5,
         "updatedAt": "2021-10-17T07:38:13.464Z"
       },

@@ -9,7 +9,7 @@ import Cart from './pages/Cart';
 import Data from './Compo/Data'
 import {categorie} from './Compo/CategoriesData'
 import ProductsList from './pages/ProductsList';
-
+import {listPrendass} from './graphql/queries'
 
 const Container = styled.div`
 text-align:center;
@@ -17,6 +17,7 @@ font-family: 'Dancing Script';
 font-weight: 700;
 
 `
+
 
 function App() {
   return (
