@@ -3,23 +3,16 @@ import styled from 'styled-components';
 import {ArrowLeftOutlined,ArrowRightOutlined} from '@material-ui/icons';
 import { useState } from 'react';
 import Data from '../Compo/Data'
-import {mobilex,mobile,table,all} from './Responsive';
 
 const Container = styled.div`
 width: 100%; 
 height:100vh;
 display:flex;
+// background-color: salmon;
 position:relative;
 overflow:hidden;
 
-${mobilex(
-  {width: '100%'}
-)}
-}
-${all(
-  {flexDirection: 'row'}
-)}
-}
+
 `;
 
 const Arrow = styled.div`
@@ -42,57 +35,32 @@ z-index:2;
 
 `
 const Wrapper = styled.div`
-hight:80%;
+hight:100%;
 display:flex;
 justify-content: center;
 align-items: center;
 transition: all 2s ease;
 transform: translateX(${props => props.slideIndex * -100}vw);
-
 `
 const Slide = styled.div`
-display:flex;
 width: 100vw;
-higth:100vh;
-flex-direction:row;
-justify-content: center;
+higthL100vh;
+display:flex;
+align-items: center;
 align-items: center;
 background-color:${props => props.bg};
-${mobilex(
-  {height:'100vh'
-  ,width: '100vw'
-,border: '1px solid',
-
-}
-)}
-}
 
 `
 const ImageContainer = styled.div`
-width:100%;
+flex:1;
 height:100%;
-
-${mobilex(
-  {width:'40%',height:'70%'}
-)}
-}
 `
 const Image = styled.img`
-border-radius: 70px 70px;
-width:100%;
-height:100px;
-${mobilex(
-  {width:'100%',height:'50%'}
-)}
-}
+height:50%;
 `
 const InfoConten = styled.div`
-width:15%;
-
-${mobilex(
-  {width:'50%',height:'50%'}
-)}
-}
+flex:1;
+padding:50px;
 `
 const Title = styled.h1`font-size:70px`
 const Description = styled.p`
@@ -152,3 +120,4 @@ const Slider = () => {
 }
 
 export default Slider;
+
