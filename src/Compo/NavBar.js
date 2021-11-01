@@ -20,7 +20,7 @@ ${table(
 )}
 }
 ${all(
-    {backgroundColor: 'blue'}
+    {backgroundColor: 'grey'}
 )}
 }
 `

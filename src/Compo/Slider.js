@@ -65,13 +65,14 @@ ${mobilex(
 const ImageContainer = styled.div`
 display:flex;
 flex:1;
-height:40%;
+height:80vh;
 ${mobilex(
   {height:'100%'}
 )}
 }
 `
 const Image = styled.img`
+width:70%;
 height:100%;
 ${mobilex(
   {height:'100%'}

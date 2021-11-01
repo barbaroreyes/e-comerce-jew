@@ -5,7 +5,7 @@ const  data = [
         "description": "aretes",
         "id": "2",
         "image": "https://ecomercejew7b6e695de0ef4126badbc7db32fd927c112134-dev.s3.amazonaws.com/public/arito-con-dije.jpeg",
-        "name": "Anillos",
+        "name": "Aritos con Dije",
         "price": 1.5,
         "updatedAt": "2021-10-17T07:38:13.464Z"
       },
