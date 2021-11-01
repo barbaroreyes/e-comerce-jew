@@ -62,34 +62,35 @@ ${mobilex(
   {height:'100vh'
   ,width: '100vw'
 ,border: '1px solid',
-flexWrapper: 'wrap'
+
 }
 )}
 }
 
 `
 const ImageContainer = styled.div`
-width:50%;
-height:80%;
-
+width:100%;
+height:100%;
 
 ${mobilex(
-  {width:'77%',height:'60%'}
+  {width:'40%',height:'70%'}
 )}
 }
 `
 const Image = styled.img`
-
-
+border-radius: 70px 70px;
+width:100%;
+height:100px;
 ${mobilex(
-  {width:'100%',height:'100%'}
+  {width:'100%',height:'70%'}
 )}
 }
 `
 const InfoConten = styled.div`
-width:35%;
+width:15%;
+
 ${mobilex(
-  {width:'22%',height:'100%'}
+  {width:'50%',height:'50%'}
 )}
 }
 `
