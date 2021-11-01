@@ -35,7 +35,8 @@ text-aling:center;
 text-align:center;
 `
 const Title = styled.h1`
-color:rgb(189,132,64);
+color:#fff;
+font-size:50px;
 `
 const Button = styled.button`
 padding:14px;
