@@ -6,20 +6,17 @@ import {mobilex,mobile,table,all} from './Responsive'
 
 const Container = styled.div `
 display:flex;
-// justify-content:center;
-// flex-direction:row;
-// align-items:center;
-// background-color:#FAFAFA;
-// text-align:center;
+
 ${mobilex(
-  {backgroundColor: 'grey',flexDirection: 'column',justifyContent:'center'}
+  {flexDirection: 'column'}
 )}
 }
 `
 const Left = styled.div `
 flex:1;
+background-color: #fcf5f5;
 ${mobilex(
-  {backgroundColor: 'blue',padding:'5px'}
+  {padding:'5px'}
 )}
 }
 `
@@ -55,7 +52,8 @@ justify-content:center;
 flex-direction:column;
 align-items:center;
 padding:5px;
-margin:10px;
+
+background-color: #fcf5f5;
 `
 
 const Logo = styled.h1 `

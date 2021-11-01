@@ -1,0 +1,15 @@
+type Prendas @model {
+  id: ID!
+  name: String!
+  description: String
+  categoria: String!
+  image: String
+  price: Float
+  
+}
+type Cate @model{
+id: ID!
+name: String!
+price: Float
+}
+

@@ -77,7 +77,7 @@ padding:1px;
 const Input = styled.input`
 border: none;
 ${mobile(
-    {width: '40px'}
+    {width: '20px'}
 )}
 }
 `
@@ -97,7 +97,7 @@ margin-left: 20px;
 color:white;
 
 ${mobilex(
-    {fontSize: '13px',margin:'10px'}
+    {fontSize: '13px',margin:'5px'}
 )}
 }
 `
@@ -124,7 +124,7 @@ const NavBar = () => {
              fontFamily:'Dancing Script'}}
              >Login</Link></MenuItem>
              <MenuItem>
-             <Badge badgeContent={1} color="primary">
+             <Badge badgeContent={0} color="primary">
                  <ShoppingCartOutlined/>
              </Badge>
              </MenuItem>
