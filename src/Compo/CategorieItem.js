@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import {mobile,table,all} from './Responsive';
 
@@ -56,7 +57,7 @@ const CategorieItem = ({item}) => {
         />
         <Info>
         <Title>{item.name}</Title>
-        <Button>Shop Now</Button>
+        <Button><Link  to='/products'>Shop Now</Link></Button>
         </Info>
     </Container>
   );

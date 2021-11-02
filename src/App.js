@@ -7,10 +7,12 @@ import Register from './pages/Register';
 import Login from './pages/Login';
 import Cart from './pages/Cart';
 import Data from './Compo/Data'
+import Amplify, {API,graphqlOperation} from 'aws-amplify'
+import confi from './aws-exports';
 import {categorie} from './Compo/CategoriesData'
 import ProductsList from './pages/ProductsList';
 import {listPrendass} from './graphql/queries'
-
+Amplify.configure(confi)
 const Container = styled.div`
 text-align:center;
 font-family: 'Dancing Script';
@@ -20,6 +22,8 @@ font-weight: 700;
 
 
 function App() {
+
+
   return (
     <Container >
       <Switch>

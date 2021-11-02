@@ -8,7 +8,7 @@ display:flex;
 justify-content: center;
 color:#fff;
 align-items:center;
-font-size: 24px;
+font-size: 34px;
 font-weith :700;
 `
 const Anouncement = () => {
