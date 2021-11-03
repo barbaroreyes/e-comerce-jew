@@ -96,8 +96,12 @@ cursor:pointer;
 margin-left: 30px;
 color:white;
 
-${mobilex(
-    {fontSize: '13px',margin:'5px'}
+${mobilex({display: 'none',margin:'5px'}
+
+)}
+}
+${all(
+    {display: 'flex'}
 )}
 }
 `
