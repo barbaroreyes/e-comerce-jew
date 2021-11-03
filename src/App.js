@@ -1,3 +1,5 @@
+import React,{useState,useEffect} from 'react';
+
 import './App.css';
 import {Switch, Route} from 'react-router-dom'
 import styled from 'styled-components';
@@ -26,6 +28,23 @@ font-weight: 700;
 
 function App() {
 
+const  [jollas,setJollas]= useState([]);
+
+
+useEffect(()=>{
+  fetchJollas()
+},[])
+
+const fetchJollas = async ()=> {
+  try {
+    const jollasData = await API.graphql(graphqlOperation(listPrendass))
+    const listJollas = jollasData.data.listPrendass.items;
+    setJollas(listJollas)
+    console.log('list', listJollas)
+  } catch (error) {
+    
+  }
+}
 
   return (
     <Container >
