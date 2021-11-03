@@ -57,7 +57,7 @@ const CategorieItem = ({item}) => {
         />
         <Info>
         <Title>{item.name}</Title>
-        <Button><Link  to='/products'>Shop Now</Link></Button>
+        <Button><Link style={{color: 'white',textDecoration:'none',cursor:'pointer'}} to='/products'>Shop Now</Link></Button>
         </Info>
     </Container>
   );
