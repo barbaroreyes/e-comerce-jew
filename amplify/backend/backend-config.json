@@ -49,5 +49,17 @@
         }
       }
     }
+  },
+  "function": {
+    "makepay": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "makeOrder": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
   }
 }
