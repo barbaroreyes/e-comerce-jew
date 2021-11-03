@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {Link} from 'react-router-dom'
 import { SearchOutlined,ShoppingCartOutlined,FavoriteBorderOutlined} from '@material-ui/icons'
 import {mobilex,mobile,table,all} from '../Compo/Responsive'
 const Info = styled.div `
@@ -17,11 +18,10 @@ opacity:0;
 transition: all 0.5s ease;
 `
 const Container = styled.div `
-// flex:1;
 display:flex;
 justify-content: center;
 align-items: center;
-margin: 5px;
+margin: 20px;
 mim-width: 280px;
 height:450px;
 border:2px solid black;
@@ -31,15 +31,6 @@ position:relative;
    opacity:1;
 }
 `
-// const Circle = styled.div `
-// width:350px;
-// height:350px;
-// background-color: rgb(0,0,0,0.1);
-// border-radius: 50%;
-// position:absolute;
-// z-index:2
-
-// `
 
 const Image = styled.img `
 width:10%;
@@ -75,16 +66,17 @@ transition: all 0.5s ease;
 
 const Product = (props) => {
     console.log('item',props.categoria);
-  return (<Container>
-           {/* <Circle/> */}
+  return (<Container onClick={()=>{
+      
+  }}>
            <Image src={props.image}/>
            <Info>
              {props.categoria}
                <Icon>
-                   <ShoppingCartOutlined/>
+                  <Link to='/cart'><ShoppingCartOutlined/></Link>
                </Icon>
                <Icon>
-                   <SearchOutlined/>
+                 <Link to='/'> <SearchOutlined/></Link> 
                </Icon>
                <Icon>
                    <FavoriteBorderOutlined/>

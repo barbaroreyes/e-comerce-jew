@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {Link} from 'react-router-dom'
 import Anouncement from '../Compo/Anouncement';
 import Footer from '../Compo/Footer';
 import NavBar from '../Compo/NavBar';
@@ -201,7 +202,7 @@ const Cart = () => {
      <Wrapper>
          <Title>Tus Products</Title>
          <Top>
-             <TopButton>Continue Shopping</TopButton>
+             <TopButton><Link to ='/productslist'></Link></TopButton>
              <TopTexts>
              <TopTex>Your Bag</TopTex>
              <TopTex>Your wishlist</TopTex>
