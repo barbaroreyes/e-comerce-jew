@@ -53,7 +53,7 @@ const fetchJollas = async ()=> {
           <Home data={categorie}/>
         </Route>
         <Route exact path='/productslist'>
-           <ProductsList data={Data} />
+           <ProductsList data={jollas} />
         </Route>
         <Route exact path='/product'>
            <Product/>

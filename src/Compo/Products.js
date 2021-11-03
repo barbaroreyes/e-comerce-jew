@@ -4,6 +4,7 @@ import {mobilex,mobile,table,all} from './Responsive'
 
 const Container = styled.div `
 display:flex;
+flex-wrap: wrap;
 margin:20px;
 ${mobilex(
   { flexDirection: 'column'}
