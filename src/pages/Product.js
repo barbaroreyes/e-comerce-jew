@@ -43,10 +43,6 @@ const FilterContainer= styled.div`
 display:flex;
  
  `
-
-// const Filter = styled.div`
-// margin:20px;
-//  `
 const FilterText = styled.span`
 font-size:20px;
 font-weight:600;
@@ -129,7 +125,7 @@ const Product = (props) => {
            <Amount>1</Amount>
            <Add/>
          </AmmountContainer>
-         <Button>Add to cart</Button>
+         <Button onClick={() => console.log('add to cart')}>Add to cart</Button>
         </AddContainer>
           </InfoContainer>
           </Wrapper>

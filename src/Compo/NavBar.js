@@ -53,7 +53,7 @@ ${mobilex(
 const Rigth =  styled.div`
 display:flex;
 justify-content:center;
-flex-direction:column;
+flex-direction:row;
 aling-items :center;
 
 flex:1;
@@ -91,9 +91,9 @@ ${mobilex(
 )}
 `
 const MenuItem =  styled.div`
-font-size: 14px;
+font-size: 24px;
 cursor:pointer;
-margin-left: 20px;
+margin-left: 30px;
 color:white;
 
 ${mobilex(
@@ -117,10 +117,12 @@ const NavBar = () => {
          </Left>
          
          <Rigth>
+         <MenuItem><Link style={{color:'white', fontSize:'23px',textDecoration:'none'}}to='/'>Home</Link></MenuItem>
+             <MenuItem><Link style={{color:'white', fontSize:'23px',textDecoration:'none'}} to='/productslist'>Productos</Link></MenuItem>
              <MenuItem><Link  to='/register' 
              style={{textDecoration:'none'
              ,color:'white',
-             fontSize:'16px',
+             fontSize:'23px',
              fontFamily:'Dancing Script'}}
              >Login</Link></MenuItem>
              <MenuItem>
