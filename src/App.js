@@ -30,10 +30,14 @@ function App() {
 
 const  [jollas,setJollas]= useState([]);
 
-
 useEffect(()=>{
   fetchJollas()
 },[])
+const [cart , setCart] = useState([]);
+
+
+const  addToCart = name => 
+setCart([...cart,name])
 
 const fetchJollas = async ()=> {
   try {
@@ -53,7 +57,7 @@ const fetchJollas = async ()=> {
           <Home data={categorie}/>
         </Route>
         <Route exact path='/productslist'>
-           <ProductsList data={jollas} />
+           <ProductsList data={jollas} addToCart={ addToCart}/>
         </Route>
         <Route exact path='/product'>
            <Product/>

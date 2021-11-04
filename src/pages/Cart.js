@@ -58,7 +58,6 @@ const Bottom = styled.div`
 display:flex;
 justify-content:center;
 align-items:center;
-// width:100%;
 
 
 
@@ -126,7 +125,6 @@ const Price = styled.div`
 display:flex;
 flex-direction:column;
 align-items:center;
-// box-shadow:4px 4px;
 width:100%;
 color:#ffff;
 padding:10px;
@@ -202,7 +200,7 @@ const Cart = () => {
      <Wrapper>
          <Title>Tus Products</Title>
          <Top>
-             <TopButton><Link to ='/productslist'></Link></TopButton>
+             <TopButton><Link style={{color:'black',textDecoration:'none'}} to ='/productslist'>Continue Shopping</Link></TopButton>
              <TopTexts>
              <TopTex>Your Bag</TopTex>
              <TopTex>Your wishlist</TopTex>
