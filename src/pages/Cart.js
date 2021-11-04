@@ -213,7 +213,7 @@ const Cart = (props) => {
              <TopTex>Your wishlist</TopTex>
              </TopTexts>
              
-             <TopButton type="filled" onClick={() =>history.push('/checkout')}>Pay>Checkout Now</TopButton>
+             <TopButton type="filled" onClick={() =>history.push('/checkout')}>Checkout Now</TopButton>
          </Top>
          <Bottom>
              {props.cart.map((item , i)=>{
