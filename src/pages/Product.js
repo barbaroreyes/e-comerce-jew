@@ -1,35 +1,36 @@
 import styled from 'styled-components';
-import NavBar from '../Compo/NavBar'
-import Anouncement from '../Compo/Anouncement';
-import Footer from '../Compo/Footer';
-import NewLetter from '../Compo/NewLetter';
 import {Remove,Add} from '@material-ui/icons';
-import {useHistory} from 'react-router-dom'
+import {useHistory} from 'react-router-dom' ;
 const Container = styled.div`
 
 `
 const Image = styled.img`
-width:50%;
-height:90vh;
+width:420px;
+height:40vh;
 border-radius: 10%;
 object-fit:cover;
 `
 const ImageContainer = styled.div`
-flex:1;
-`
-const Wrapper = styled.div`
-width:75%;
-padding:50px;
-display:flex;
-justify-content: center;
-`
-const InfoContainer = styled.div`
 display:flex;
 justify-content: center;
 flex-direction: column;
+margin:70px;
+`
+const Wrapper = styled.div`
+width:100%;
+// padding:50px;
+display:flex;
+justify-content: center;
+flex-direction: row;
 align-items: center;
-width:20%;
-font-size:40px;
+`
+const InfoContainer = styled.div`
+// display:flex;
+// justify-content: center;
+// flex-direction: column;
+// align-items: center;
+// width:20%;
+// font-size:40px;
 
 
 `
@@ -41,7 +42,9 @@ const Des = styled.p`
 `
 const FilterContainer= styled.div`
 display:flex;
- 
+justify-content: center;
+flex-direction: column;
+align-items: center;
  `
 const FilterText = styled.span`
 font-size:20px;
@@ -100,11 +103,14 @@ const Product = (props) => {
       <Wrapper>
           <ImageContainer>
           <Image src={props.image}/>
-          </ImageContainer>
-          <InfoContainer>
-              <Title>{props.name}</Title>
+          <Title>{props.name}</Title>
               <Des>{props.description}</Des>
            <span>{props.price}</span>
+          </ImageContainer>
+          
+          <InfoContainer>
+
+            
 
            <FilterContainer><FilterText>Filter Products</FilterText>
         <Select>
@@ -123,12 +129,10 @@ const Product = (props) => {
            <Add/>
          </AmmountContainer>
          <Button onClick={() =>history.push('/checkout')}>Pay</Button>
+         
         </AddContainer>
           </InfoContainer>
           </Wrapper>
-      
-      <NewLetter/>
-      <Footer/>
     </Container>
   );
 }
