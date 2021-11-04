@@ -1,14 +1,17 @@
 import styled from 'styled-components';
 import {Remove,Add} from '@material-ui/icons';
 import {useHistory} from 'react-router-dom' ;
+import {mobilex,mobile,table,all} from '../Compo/Responsive'
 const Container = styled.div`
 
 `
 const Image = styled.img`
+display:flex
 width:420px;
 height:40vh;
 border-radius: 10%;
 object-fit:cover;
+${mobilex({flexDirection:'column',alignItems:"center"})}
 `
 const ImageContainer = styled.div`
 display:flex;
@@ -18,18 +21,21 @@ margin:70px;
 `
 const Wrapper = styled.div`
 width:100%;
-padding:50px;
 display:flex;
 justify-content: flex-start;
 flex-direction: row;
-align-items: center;
 border : 1px solid black;
-margin:20px;
+
+
+// ${mobilex({flexDirection:'column',alignItems:"center"})}
 `
 const InfoContainer = styled.div`
-// display:flex;
-// justify-content: center;
-// flex-direction: column;
+display:flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+
+
 // align-items: center;
 // width:20%;
 // font-size:40px;
@@ -43,10 +49,10 @@ const Des = styled.p`
 
 `
 const FilterContainer= styled.div`
-display:flex;
-justify-content: center;
-flex-direction: column;
-align-items: center;
+// display:flex;
+// justify-content: center;
+// flex-direction: column;
+// align-items: center;
  `
 const FilterText = styled.span`
 font-size:20px;
@@ -108,22 +114,12 @@ const Product = (props) => {
           <Title>{props.name}</Title>
               <Des>{props.description}</Des>
            <span>{props.price}</span>
+          
           </ImageContainer>
           
           <InfoContainer>
 
-            
-
-           <FilterContainer><FilterText>Filter Products</FilterText>
-        <Select>
-            <Option disabled selected>Categoria</Option>
-            <Option>Perlas</Option>
-            <Option> Animales</Option>
-            <Option>Corazon</Option>
-            <Option>Redes</Option>
-            <Option>Otros</Option>
-          </Select>
-        </FilterContainer>
+  
         <AddContainer>
          <AmmountContainer>
            <Remove/>
