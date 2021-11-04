@@ -20,12 +20,14 @@ ${all(
 
 
 const Products = (props) => {
-  
+  console.log('props',props.addToCart)
   return (
     <Container>
       {props.data.map((item,i)=>{
         return (
-              <Product {...item} key={i}/>
+              <Product {...item} key={i}
+              addTocart = {props.addToCart}
+              />
           )
       })}
     </Container>

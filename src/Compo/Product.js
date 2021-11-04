@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Link} from 'react-router-dom'
+import {Link,useHistory} from 'react-router-dom'
 import { SearchOutlined,ShoppingCartOutlined,FavoriteBorderOutlined} from '@material-ui/icons'
 import {mobilex,mobile,table,all} from '../Compo/Responsive'
 const Info = styled.div `
@@ -65,7 +65,8 @@ transition: all 0.5s ease;
 `
 
 const Product = (props) => {
-    console.log('item',props.categoria);
+    console.log('item',props);
+  const history = useHistory()
   return (<Container onClick={()=>{
       
   }}>

@@ -69,7 +69,7 @@ const fetchJollas = async ()=> {
            <Login/>
         </Route>
         <Route exact path='/cart'>
-           <Cart/>
+           <Cart cart={cart}/>
         </Route>
       </Switch>
     </Container>
