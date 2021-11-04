@@ -75,7 +75,7 @@ const Product = (props) => {
                   <ShoppingCartOutlined  onClick={() =>props.addToCart({...props},history.push('/cart'))}/>
                </Icon>
                <Icon>
-                  <SearchOutlined onClick={() =>history.push('/productslist')}/>
+                  <SearchOutlined onClick={() =>history.push('/products')}/>
                </Icon>
                <Icon>
                    <FavoriteBorderOutlined/>

@@ -105,9 +105,7 @@ const Product = (props) => {
           </ImageContainer>
           <InfoContainer>
               <Title>{props.name}</Title>
-              <Des> Lorem ipsum dolor sit amet consectetur, 
-          adipisicing elit. Dolores eum accusamus quam ab, commodi eaque? Voluptatem in cupiditate cum nesciunt aspernatur,
-           </Des>
+              <Des>{props.description}</Des>
            <span>{props.price}</span>
 
            <FilterContainer><FilterText>Filter Products</FilterText>

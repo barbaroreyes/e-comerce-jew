@@ -9,7 +9,7 @@ import Footer from '../Compo/Footer';
 const Home = (props) => {
   return (
     <div>
-     < NavBar/>
+     < NavBar {...props}/>
      <Anouncement/> 
      <Slider/>
      <Categories {...props}/>

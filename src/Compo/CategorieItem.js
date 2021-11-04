@@ -1,9 +1,8 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import {mobile,table,all} from './Responsive';
-
+import {useHistory }from 'react-router-dom'
 const Container = styled.div`
 display:flex;
 
@@ -50,14 +49,14 @@ cursor:pointer;
 
 
 const CategorieItem = ({item}) => {
-
+ const history = useHistory()
   return (
     <Container>
         <Image src={item.image} 
         />
         <Info>
         <Title>{item.name}</Title>
-        <Button><Link style={{color: 'white',textDecoration:'none',cursor:'pointer'}} to='/productslist'>Shop Now</Link></Button>
+        <Button onClick={()=> history.push('/productslist')}>Shop Now</Button>
         </Info>
     </Container>
   );

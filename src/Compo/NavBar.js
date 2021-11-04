@@ -5,6 +5,8 @@ import {Search, ShoppingCartOutlined} from '@material-ui/icons'
 import {Badge} from '@material-ui/core'
 import {mobilex,mobile,table,all} from './Responsive'
 import { useHistory } from 'react-router-dom';
+
+
 const Container =  styled.div`
 height: 100px;
 ${mobilex(
@@ -106,8 +108,9 @@ ${all(
 }
 `
 
-const NavBar = () => {
-    const {history} = useHistory()
+const NavBar = (props) => {
+    console.log(props.cart ,'cart')
+    const history = useHistory()
   return (
     <Container>
         <Wrapper>
