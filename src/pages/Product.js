@@ -18,11 +18,13 @@ margin:70px;
 `
 const Wrapper = styled.div`
 width:100%;
-// padding:50px;
+padding:50px;
 display:flex;
-justify-content: center;
+justify-content: flex-start;
 flex-direction: row;
 align-items: center;
+border : 1px solid black;
+margin:20px;
 `
 const InfoContainer = styled.div`
 // display:flex;
