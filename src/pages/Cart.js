@@ -5,6 +5,7 @@ import Anouncement from '../Compo/Anouncement';
 import Footer from '../Compo/Footer';
 import NavBar from '../Compo/NavBar';
 import {Remove,Add} from '@material-ui/icons';
+import {mobilex,table,all} from '../Compo/Responsive';
 import Product from '../pages/Product';
 const Container = styled.div``
 
@@ -20,9 +21,13 @@ display:flex;
 justify-content:center;
 align-items:center;
 width:100%;
+${mobilex({
+    flexDirection:'column',
+    textAlign:'center',
+})}
 `
 const TopTexts = styled.div`
-display:flex;
+
 
 `
 const TopTex = styled.span`
