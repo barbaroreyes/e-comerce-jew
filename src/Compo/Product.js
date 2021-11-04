@@ -67,17 +67,15 @@ transition: all 0.5s ease;
 const Product = (props) => {
     console.log('item',props);
   const history = useHistory()
-  return (<Container onClick={()=>{
-      
-  }}>
+  return (<Container >
            <Image src={props.image}/>
            <Info>
              {props.categoria}
                <Icon>
-                  <Link to='/cart'><ShoppingCartOutlined/></Link>
+                  <ShoppingCartOutlined  onClick={() =>props.addToCart({...props},history.push('/cart'))}/>
                </Icon>
                <Icon>
-                 <Link to='/'> <SearchOutlined/></Link> 
+                  <SearchOutlined onClick={() =>history.push('/productslist')}/>
                </Icon>
                <Icon>
                    <FavoriteBorderOutlined/>

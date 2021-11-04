@@ -5,7 +5,7 @@ import Anouncement from '../Compo/Anouncement';
 import Footer from '../Compo/Footer';
 import NavBar from '../Compo/NavBar';
 import {Remove,Add} from '@material-ui/icons';
-
+import Product from '../pages/Product';
 const Container = styled.div``
 
 const Wrapper = styled.div`
@@ -72,13 +72,13 @@ alig
 `
 
 
-const Product= styled.div`
-width: 45%;
-display:flex;
+// const Product= styled.div`
+// width: 45%;
+// display:flex;
 
-border-radius:20px 20px;
-padding:20px;
-`
+// border-radius:20px 20px;
+// padding:20px;
+// `
 const ProdutDetails = styled.div`
 display:flex;
 justify-content:space-between;
@@ -192,7 +192,7 @@ color:white;
 font-weight:400;
 padding: 5px;
 `
-const Cart = () => {
+const Cart = (props) => {
   return (
     <Container>
      <NavBar/>
@@ -209,7 +209,13 @@ const Cart = () => {
              <TopButton type="filled">Checkout Now</TopButton>
          </Top>
          <Bottom>
-              <Info>
+             {props.cart.map((item , i)=>{
+                 return (<div>
+                           <Product key={i} {...item} {...props.handledelete}/>
+
+                          </div>)
+             })}
+              {/* <Info>
                   <Product>
                       <ProdutDetails>
                       <Image src='https://ecomercec9b5366954ad45c183a02ba23f9f2d3c122320-dev.s3.amazonaws.com/public/joyeria+fotos/Argollas1.jpeg'/>
@@ -269,7 +275,7 @@ const Cart = () => {
              <Button>
                  Check Now
              </Button>
-              </Sumary>
+              </Sumary> */}
          </Bottom>
          
      </Wrapper>

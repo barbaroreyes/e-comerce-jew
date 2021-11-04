@@ -39,6 +39,12 @@ const [cart , setCart] = useState([]);
 const  addToCart = name => 
 setCart([...cart,name])
 
+const handledelete = (pos) => {
+  setCart(cart
+  .filter((name, index) => 
+  index !== pos)) 
+}
+
 const fetchJollas = async ()=> {
   try {
     const jollasData = await API.graphql(graphqlOperation(listPrendass))
@@ -69,7 +75,10 @@ const fetchJollas = async ()=> {
            <Login/>
         </Route>
         <Route exact path='/cart'>
-           <Cart cart={cart}/>
+           <Cart 
+           cart={cart}
+           handledelete ={handledelete }
+           />
         </Route>
       </Switch>
     </Container>

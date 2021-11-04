@@ -26,7 +26,7 @@ const Products = (props) => {
       {props.data.map((item,i)=>{
         return (
               <Product {...item} key={i}
-              addTocart = {props.addToCart}
+              addToCart = {props.addToCart}
               />
           )
       })}

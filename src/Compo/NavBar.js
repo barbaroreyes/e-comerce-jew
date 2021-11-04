@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import {Search, ShoppingCartOutlined} from '@material-ui/icons'
 import {Badge} from '@material-ui/core'
 import {mobilex,mobile,table,all} from './Responsive'
-
+import { useHistory } from 'react-router-dom';
 const Container =  styled.div`
 height: 100px;
 ${mobilex(
@@ -107,6 +107,7 @@ ${all(
 `
 
 const NavBar = () => {
+    const {history} = useHistory()
   return (
     <Container>
         <Wrapper>
@@ -131,7 +132,7 @@ const NavBar = () => {
              >Login</Link></MenuItem>
              <MenuItem>
              <Badge badgeContent={0} color="primary">
-                 <ShoppingCartOutlined/>
+                 <ShoppingCartOutlined onClick={()=> history.push('/cart')}/>
              </Badge>
              </MenuItem>
 

@@ -4,7 +4,7 @@ import Anouncement from '../Compo/Anouncement';
 import Footer from '../Compo/Footer';
 import NewLetter from '../Compo/NewLetter';
 import {Remove,Add} from '@material-ui/icons';
-
+import {useHistory} from 'react-router-dom'
 const Container = styled.div`
 
 `
@@ -94,20 +94,21 @@ justify-content:center;
  `
 const Product = (props) => {
   console.log('props en simgle')
+  const history = useHistory()
   return (
     <Container>
       <NavBar/>
       <Anouncement/>
       <Wrapper>
           <ImageContainer>
-          <Image src='https://ecomercec9b5366954ad45c183a02ba23f9f2d3c122320-dev.s3.amazonaws.com/public/Anillos.jpeg'/>
+          <Image src={props.image}/>
           </ImageContainer>
           <InfoContainer>
-              <Title>Title</Title>
+              <Title>{props.name}</Title>
               <Des> Lorem ipsum dolor sit amet consectetur, 
           adipisicing elit. Dolores eum accusamus quam ab, commodi eaque? Voluptatem in cupiditate cum nesciunt aspernatur,
            </Des>
-           <span>$50</span>
+           <span>{props.price}</span>
 
            <FilterContainer><FilterText>Filter Products</FilterText>
         <Select>
@@ -125,7 +126,7 @@ const Product = (props) => {
            <Amount>1</Amount>
            <Add/>
          </AmmountContainer>
-         <Button onClick={() => console.log('add to cart')}>Add to cart</Button>
+         <Button onClick={() => console.log('to pay')}>Pay</Button>
         </AddContainer>
           </InfoContainer>
           </Wrapper>
