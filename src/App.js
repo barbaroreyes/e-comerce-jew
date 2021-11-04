@@ -71,6 +71,9 @@ const fetchJollas = async ()=> {
         <Route exact path='/register'>
            <Register/>
         </Route>
+        <Route exact path='/checkout'>
+          not yet
+        </Route>
         <Route exact path='/login'>
            <Login/>
         </Route>

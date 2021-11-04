@@ -7,6 +7,7 @@ import NavBar from '../Compo/NavBar';
 import {Remove,Add} from '@material-ui/icons';
 import {mobilex,table,all} from '../Compo/Responsive';
 import Product from '../pages/Product';
+import {useHistory} from 'react-router-dom'
 const Container = styled.div``
 
 const Wrapper = styled.div`
@@ -63,7 +64,7 @@ const Bottom = styled.div`
 display:flex;
 justify-content:center;
 align-items:center;
-
+${mobilex({flexDirection:'column',alignItems:"center"})}
 
 
 `
@@ -72,7 +73,7 @@ flex:3;
 display:flex;
 justify-content:center;
 flex-direction:column;
-alig
+align-items:center;
 
 `
 
@@ -198,6 +199,7 @@ font-weight:400;
 padding: 5px;
 `
 const Cart = (props) => {
+    const history= useHistory()
   return (
     <Container>
      <NavBar/>
@@ -211,7 +213,7 @@ const Cart = (props) => {
              <TopTex>Your wishlist</TopTex>
              </TopTexts>
              
-             <TopButton type="filled">Checkout Now</TopButton>
+             <TopButton type="filled" onClick={() =>history.push('/checkout')}>Pay>Checkout Now</TopButton>
          </Top>
          <Bottom>
              {props.cart.map((item , i)=>{

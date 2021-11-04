@@ -97,8 +97,6 @@ const Product = (props) => {
   const history = useHistory()
   return (
     <Container>
-      <NavBar/>
-      <Anouncement/>
       <Wrapper>
           <ImageContainer>
           <Image src={props.image}/>
@@ -124,7 +122,7 @@ const Product = (props) => {
            <Amount>1</Amount>
            <Add/>
          </AmmountContainer>
-         <Button onClick={() => console.log('to pay')}>Pay</Button>
+         <Button onClick={() =>history.push('/checkout')}>Pay</Button>
         </AddContainer>
           </InfoContainer>
           </Wrapper>
