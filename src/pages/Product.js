@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {Remove,Add} from '@material-ui/icons';
+import {Remove,Add,Delete,Payment} from '@material-ui/icons';
 import {useHistory} from 'react-router-dom' ;
 import {mobilex,mobile,table,all} from '../Compo/Responsive'
 const Container = styled.div`
@@ -11,29 +11,31 @@ width:420px;
 height:40vh;
 border-radius: 10%;
 object-fit:cover;
-${mobilex({flexDirection:'column',alignItems:"center"})}
+
 `
 const ImageContainer = styled.div`
 display:flex;
-justify-content: center;
+justify-content: flex-start;
+align-items: center;
 flex-direction: column;
-margin:70px;
+
+${mobilex({flexDirection:'column',alignItems:"center"})}
 `
 const Wrapper = styled.div`
 width:100%;
 display:flex;
 justify-content: flex-start;
 flex-direction: row;
-border : 1px solid black;
 
 
-// ${mobilex({flexDirection:'column',alignItems:"center"})}
+
+
 `
 const InfoContainer = styled.div`
-display:flex;
-justify-content: center;
-flex-direction: column;
-align-items: center;
+
+// justify-content: center;
+// flex-direction: column;
+// align-items: center;
 
 
 // align-items: center;
@@ -72,7 +74,8 @@ margin:20px;
  display:flex;
 align-items:center;
 justify-content:space-between;
-margin:20px;
+margin:5px;
+${mobilex({flexDirection:'column',alignItems:"center"})}
  `
  const AmmountContainer = styled.div`
 
@@ -82,13 +85,14 @@ margin:20px;
 padding:14px;
 background:transparent;
 color: rgb(189,132,64);
-border-radius:30px 30px;
-width:80%;
+
+width:100%;
+text-align:center;
 cursor:pointer;
 margin:20px;
 font-weight:500
 font-size:18px;
-border:5px solid rgb(189,132,64);
+
 &:hover{
   background:black;
   color:#fff
@@ -126,7 +130,8 @@ const Product = (props) => {
            <Amount>1</Amount>
            <Add/>
          </AmmountContainer>
-         <Button onClick={() =>history.push('/checkout')}>Pay</Button>
+         <Button onClick={() =>history.push('/checkout')}><Payment/></Button>
+         <Button onClick={() =>history.push('/checkout')}><Delete/></Button>
          
         </AddContainer>
           </InfoContainer>
