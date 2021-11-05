@@ -36,17 +36,18 @@ const TopTex = styled.span`
 width:100px;
 margin:70px;
 padding:10px;
-cursor:pointer;
+cursor:pointer;order
 &:hover{
     text-decoration:underline;
 }
+${mobilex({alignText:"center"})}
 `
 const TopButton = styled.div`
 padding:14px;
 background:transparent;
 color: rgb(189,132,64);
 border-radius:30px 30px;
-width:30%;
+width:40%;
 cursor:pointer;
 margin:20px;
 font-weight:500

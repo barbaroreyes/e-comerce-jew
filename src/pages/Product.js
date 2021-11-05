@@ -101,7 +101,7 @@ font-size:18px;
  const Amount = styled.span`
 width:30px;
 height:30px;
-border-radius:10px;
+// border-radius:10px;
 display:flex;
 align-items:center;
 justify-content:center;
