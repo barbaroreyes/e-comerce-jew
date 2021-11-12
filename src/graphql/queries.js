@@ -38,10 +38,6 @@ export const listPrendas = /* GraphQL */ `
         description
         categoria
         image
-        price
-        orders {
-          nextToken
-        }
         createdAt
         updatedAt
       }
