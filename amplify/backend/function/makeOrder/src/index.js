@@ -4,8 +4,8 @@ const documentClient = new AWS.DynamoDB.DocumentClient();
 
 const ORDER_TABLE = "Order-table";
 const ORDER_TYPE = "Order";
-const BOOK_ORDER_TABLE = "jollasOrder-table";
-const BOOK_ORDER_TYPE = "BookOrder";
+const PRENDA_ORDER_TABLE = "PredasOrder-table";
+const PRENDA_ORDER_TYPE = "PrendaOrder";
 
 const createOrder = async (payload) => {
   const { order_id, username, email, total } = payload;
@@ -25,16 +25,16 @@ const createOrder = async (payload) => {
   await documentClient.put(params).promise();
 };
 
-const createBookOrder = async (payload) => {
-  let bookOrders = [];
+const createPrendaOrder = async (payload) => {
+  let prendaOrders = [];
   for (let i = 0; i < payload.cart.length; i++) {
     const cartItem = payload.cart[i];
-    bookOrders.push({
+    prendaOrders.push({
       PutRequest: {
         Item: {
           id: uuidv4(),
-          __typename: BOOK_ORDER_TYPE,
-          book_id: cartItem.id,
+          __typename: PRENDA_ORDER_TYPE,
+          prenda_id: cartItem.id,
           order_id: payload.order_id,
           customer: payload.email,
           createdAt: new Date().toISOString(),
@@ -46,7 +46,7 @@ const createBookOrder = async (payload) => {
   let params = {
     RequestItems: {}
   };
-  params["RequestItems"][BOOK_ORDER_TABLE] = bookOrders;
+  params["RequestItems"][PRENDA_ORDER_TABLE] = prendaOrders;
   console.log(params);
   await documentClient.batchWrite(params).promise();
 };
@@ -66,7 +66,7 @@ exports.handler = async (event) => {
     await createOrder(payload);
 
     // links books with the order
-    await createBookOrder(payload);
+    await createPrendaOrder(payload);
 
     // Note - You may add another function to email the invoice to the user
 

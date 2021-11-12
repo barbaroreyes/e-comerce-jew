@@ -1,43 +1,73 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const onCreatePrendas = /* GraphQL */ `
-  subscription OnCreatePrendas {
-    onCreatePrendas {
+export const onCreatePrenda = /* GraphQL */ `
+  subscription OnCreatePrenda {
+    onCreatePrenda {
       id
       name
       description
       categoria
       image
       price
+      orders {
+        items {
+          id
+          prenda_id
+          order_id
+          createdAt
+          updatedAt
+        }
+        nextToken
+      }
       createdAt
       updatedAt
     }
   }
 `;
-export const onUpdatePrendas = /* GraphQL */ `
-  subscription OnUpdatePrendas {
-    onUpdatePrendas {
+export const onUpdatePrenda = /* GraphQL */ `
+  subscription OnUpdatePrenda {
+    onUpdatePrenda {
       id
       name
       description
       categoria
       image
       price
+      orders {
+        items {
+          id
+          prenda_id
+          order_id
+          createdAt
+          updatedAt
+        }
+        nextToken
+      }
       createdAt
       updatedAt
     }
   }
 `;
-export const onDeletePrendas = /* GraphQL */ `
-  subscription OnDeletePrendas {
-    onDeletePrendas {
+export const onDeletePrenda = /* GraphQL */ `
+  subscription OnDeletePrenda {
+    onDeletePrenda {
       id
       name
       description
       categoria
       image
       price
+      orders {
+        items {
+          id
+          prenda_id
+          order_id
+          createdAt
+          updatedAt
+        }
+        nextToken
+      }
       createdAt
       updatedAt
     }

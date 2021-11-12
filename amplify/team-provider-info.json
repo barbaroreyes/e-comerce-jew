@@ -13,7 +13,18 @@
     },
     "categories": {
       "auth": {
-        "ecomercejewb73f90ec": {}
+        "ecomercejewb73f90ec": {},
+        "userPoolGroups": {}
+      },
+      "function": {
+        "makeOrder": {
+          "deploymentBucketName": "amplify-ecomercejew-dev-112134-deployment",
+          "s3Key": "amplify-builds/makeOrder-7a3167474d76576a434b-build.zip"
+        },
+        "makepay": {
+          "deploymentBucketName": "amplify-ecomercejew-dev-112134-deployment",
+          "s3Key": "amplify-builds/makepay-4c7a5930633949464746-build.zip"
+        }
       }
     }
   }

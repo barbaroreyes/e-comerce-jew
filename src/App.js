@@ -10,7 +10,7 @@ import Login from './pages/Login';
 import Cart from './pages/Cart';
 import Data from './Compo/Data'
 import Amplify, {API,graphqlOperation} from 'aws-amplify'
-import {listPrendass} from './graphql/queries'
+import {listPrendas} from './graphql/queries'
 import confi from './aws-exports';
 import {categorie} from './Compo/CategoriesData'
 import ProductsList from './pages/ProductsList';
@@ -47,7 +47,7 @@ const handledelete = (pos) => {
 
 const fetchJollas = async ()=> {
   try {
-    const jollasData = await API.graphql(graphqlOperation(listPrendass))
+    const jollasData = await API.graphql(graphqlOperation(listPrendas))
     const listJollas = jollasData.data.listPrendass.items;
     setJollas(listJollas)
     console.log('list', listJollas)

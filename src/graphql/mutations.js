@@ -1,52 +1,87 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const createPrendas = /* GraphQL */ `
-  mutation CreatePrendas(
-    $input: CreatePrendasInput!
-    $condition: ModelPrendasConditionInput
+export const processOrder = /* GraphQL */ `
+  mutation ProcessOrder($input: ProcessOrderInput!) {
+    processOrder(input: $input)
+  }
+`;
+export const createPrenda = /* GraphQL */ `
+  mutation CreatePrenda(
+    $input: CreatePrendaInput!
+    $condition: ModelPrendaConditionInput
   ) {
-    createPrendas(input: $input, condition: $condition) {
+    createPrenda(input: $input, condition: $condition) {
       id
       name
       description
       categoria
       image
       price
+      orders {
+        items {
+          id
+          prenda_id
+          order_id
+          createdAt
+          updatedAt
+        }
+        nextToken
+      }
       createdAt
       updatedAt
     }
   }
 `;
-export const updatePrendas = /* GraphQL */ `
-  mutation UpdatePrendas(
-    $input: UpdatePrendasInput!
-    $condition: ModelPrendasConditionInput
+export const updatePrenda = /* GraphQL */ `
+  mutation UpdatePrenda(
+    $input: UpdatePrendaInput!
+    $condition: ModelPrendaConditionInput
   ) {
-    updatePrendas(input: $input, condition: $condition) {
+    updatePrenda(input: $input, condition: $condition) {
       id
       name
       description
       categoria
       image
       price
+      orders {
+        items {
+          id
+          prenda_id
+          order_id
+          createdAt
+          updatedAt
+        }
+        nextToken
+      }
       createdAt
       updatedAt
     }
   }
 `;
-export const deletePrendas = /* GraphQL */ `
-  mutation DeletePrendas(
-    $input: DeletePrendasInput!
-    $condition: ModelPrendasConditionInput
+export const deletePrenda = /* GraphQL */ `
+  mutation DeletePrenda(
+    $input: DeletePrendaInput!
+    $condition: ModelPrendaConditionInput
   ) {
-    deletePrendas(input: $input, condition: $condition) {
+    deletePrenda(input: $input, condition: $condition) {
       id
       name
       description
       categoria
       image
       price
+      orders {
+        items {
+          id
+          prenda_id
+          order_id
+          createdAt
+          updatedAt
+        }
+        nextToken
+      }
       createdAt
       updatedAt
     }
@@ -94,6 +129,201 @@ export const deleteCate = /* GraphQL */ `
       image
       createdAt
       updatedAt
+    }
+  }
+`;
+export const createPrendaOrder = /* GraphQL */ `
+  mutation CreatePrendaOrder(
+    $input: CreatePrendaOrderInput!
+    $condition: ModelPrendaOrderConditionInput
+  ) {
+    createPrendaOrder(input: $input, condition: $condition) {
+      id
+      prenda_id
+      order_id
+      prenda {
+        id
+        name
+        description
+        categoria
+        image
+        price
+        orders {
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
+      order {
+        id
+        user
+        date
+        total
+        prendas {
+          nextToken
+        }
+        createdAt
+        updatedAt
+        customer
+      }
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const updatePrendaOrder = /* GraphQL */ `
+  mutation UpdatePrendaOrder(
+    $input: UpdatePrendaOrderInput!
+    $condition: ModelPrendaOrderConditionInput
+  ) {
+    updatePrendaOrder(input: $input, condition: $condition) {
+      id
+      prenda_id
+      order_id
+      prenda {
+        id
+        name
+        description
+        categoria
+        image
+        price
+        orders {
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
+      order {
+        id
+        user
+        date
+        total
+        prendas {
+          nextToken
+        }
+        createdAt
+        updatedAt
+        customer
+      }
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const deletePrendaOrder = /* GraphQL */ `
+  mutation DeletePrendaOrder(
+    $input: DeletePrendaOrderInput!
+    $condition: ModelPrendaOrderConditionInput
+  ) {
+    deletePrendaOrder(input: $input, condition: $condition) {
+      id
+      prenda_id
+      order_id
+      prenda {
+        id
+        name
+        description
+        categoria
+        image
+        price
+        orders {
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
+      order {
+        id
+        user
+        date
+        total
+        prendas {
+          nextToken
+        }
+        createdAt
+        updatedAt
+        customer
+      }
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const createOrder = /* GraphQL */ `
+  mutation CreateOrder(
+    $input: CreateOrderInput!
+    $condition: ModelOrderConditionInput
+  ) {
+    createOrder(input: $input, condition: $condition) {
+      id
+      user
+      date
+      total
+      prendas {
+        items {
+          id
+          prenda_id
+          order_id
+          createdAt
+          updatedAt
+        }
+        nextToken
+      }
+      createdAt
+      updatedAt
+      customer
+    }
+  }
+`;
+export const updateOrder = /* GraphQL */ `
+  mutation UpdateOrder(
+    $input: UpdateOrderInput!
+    $condition: ModelOrderConditionInput
+  ) {
+    updateOrder(input: $input, condition: $condition) {
+      id
+      user
+      date
+      total
+      prendas {
+        items {
+          id
+          prenda_id
+          order_id
+          createdAt
+          updatedAt
+        }
+        nextToken
+      }
+      createdAt
+      updatedAt
+      customer
+    }
+  }
+`;
+export const deleteOrder = /* GraphQL */ `
+  mutation DeleteOrder(
+    $input: DeleteOrderInput!
+    $condition: ModelOrderConditionInput
+  ) {
+    deleteOrder(input: $input, condition: $condition) {
+      id
+      user
+      date
+      total
+      prendas {
+        items {
+          id
+          prenda_id
+          order_id
+          createdAt
+          updatedAt
+        }
+        nextToken
+      }
+      createdAt
+      updatedAt
+      customer
     }
   }
 `;

@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 import {ArrowLeftOutlined,ArrowRightOutlined} from '@material-ui/icons';
 import { useState } from 'react';
-import Data from '../Compo/Data'
+import Data from './Data'
 
 const Container = styled.div`
 width: 100%; 
